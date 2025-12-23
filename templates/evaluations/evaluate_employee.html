@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Evaluación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <p><a href="/my-team/">&larr; Volver a Mi equipo</a></p>
+
+  <h1>Evaluar</h1>
+  <p><strong>Empleado:</strong> {{ employee.full_name }}</p>
+  <p><strong>DNI:</strong> {{ employee.dni }}</p>
+  <p><strong>Puesto de evaluación:</strong>
+    {% if employee.evaluation_position %}
+      {{ employee.evaluation_position.code }} - {{ employee.evaluation_position.name }}
+    {% else %}
+      (sin asignar)
+    {% endif %}
+  </p>
+
+  <p>Formulario de evaluación: pendiente de implementar en el siguiente paso.</p>
+</body>
+</html>

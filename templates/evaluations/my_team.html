@@ -1,1 +1,62 @@
-{% extends 'base.html' %}{% block content %}<h1>My team</h1>{% endblock %}
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Mi equipo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <h1>Mi equipo</h1>
+
+  {% if employees %}
+    <table border="1" cellpadding="6" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Empleado</th>
+          <th>DNI</th>
+          <th>Activo</th>
+          <th>Puesto de evaluación</th>
+          <th>Responsable</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for e in employees %}
+          <tr>
+            <td>{{ e.full_name }}</td>
+            <td>{{ e.dni }}</td>
+            <td>
+              {% if e.is_active %}
+                Sí
+              {% else %}
+                No
+              {% endif %}
+            </td>
+            <td>
+              {% if e.evaluation_position %}
+                {{ e.evaluation_position.code }} - {{ e.evaluation_position.name }}
+              {% else %}
+                (sin asignar)
+              {% endif %}
+            </td>
+            <td>
+              {% if e.manager %}
+                {{ e.manager.username }}
+              {% else %}
+                (sin responsable)
+              {% endif %}
+            </td>
+            <td>
+              <a href="/evaluate/{{ e.id }}/">Evaluar</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No hay empleados asignados a tu usuario.</p>
+  {% endif %}
+
+</body>
+</html>
