@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+dist/
+build/
+*.sqlite3
+media/uploads/
+staticfiles/
