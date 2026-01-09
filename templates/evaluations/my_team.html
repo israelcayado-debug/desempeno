@@ -7,6 +7,7 @@
 </head>
 <body>
 
+  <p><a href="{% url 'home' %}">&larr; Volver al inicio</a></p>
   <h1>Mi equipo</h1>
   {% load eval_extras %}
 
@@ -17,13 +18,13 @@
           <th>Empleado</th>
           <th>DNI</th>
           <th>Activo</th>
-          <th>Puesto de evaluación</th>
+          <th>Puesto de evaluacion</th>
           <th>Plantilla</th>
           <th>Responsable</th>
-	  <th>Estado</th>
+          <th>Estado</th>
           <th>Score</th>
-          <th>Acción</th>
-
+          <th>Accion</th>
+          <th>Alertas</th>
         </tr>
       </thead>
       <tbody>
@@ -89,7 +90,25 @@
         (sin periodo abierto)
       {% endif %}
     </td>
+
+    <td>
+      {% with alerts=alerts_by_employee_id|get_item:e.id %}
+        {% if alerts %}
+          {% for a in alerts|slice:":3" %}
+            <a href="{{ a.action_url }}" style="display:inline-block; padding:2px 6px; margin:2px; border-radius:10px; font-size:12px; border:1px solid #ccc; text-decoration:none; color:#000; background:{% if a.severity == 'danger' %}#ffd6d6{% elif a.severity == 'warning' %}#fff2cc{% else %}#e6f0ff{% endif %};">
+              {{ a.text }}
+            </a>
+          {% endfor %}
+          {% if alerts|length > 3 %}
+            <span style="font-size:12px;">+{{ alerts|length|add:'-3' }}</span>
+          {% endif %}
+        {% else %}
+          -
+        {% endif %}
+      {% endwith %}
+    </td>
   </tr>
+
 {% endfor %}
 
       </tbody>

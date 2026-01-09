@@ -1,0 +1,26 @@
+﻿{% extends "base.html" %}
+{% block title %}Entrar | Desempeño{% endblock %}
+
+{% block content %}
+  <div class="card" style="max-width:520px;margin:0 auto;">
+    <h1 style="margin-top:0;">Entrar</h1>
+    {% if form.errors %}
+      <p style="color:#b91c1c;">Usuario o contraseña incorrectos.</p>
+    {% endif %}
+
+    <form method="post">
+      {% csrf_token %}
+      <div style="display:grid;gap:10px;">
+        <div>
+          <label>Usuario</label><br>
+          {{ form.username }}
+        </div>
+        <div>
+          <label>Contraseña</label><br>
+          {{ form.password }}
+        </div>
+        <button class="btn primary" type="submit">Entrar</button>
+      </div>
+    </form>
+  </div>
+{% endblock %}

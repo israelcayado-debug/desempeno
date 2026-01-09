@@ -4,7 +4,7 @@ from django.utils import timezone
 
 from apps.core.models import TimeStampedModel
 from apps.org.models import Employee
-from apps.templates_eval.models import TemplateItem
+from apps.templates_eval.models import TemplateQuestion
 
 
 class EvaluationPeriod(TimeStampedModel):
@@ -56,6 +56,7 @@ class Evaluation(TimeStampedModel):
     frozen_position_code = models.CharField(max_length=8)
     frozen_position_name = models.CharField(max_length=160)
     evaluator_comment = models.TextField(blank=True, default="")
+    overall_comment = models.TextField(blank=True, default="")
 
     final_score = models.DecimalField(max_digits=7, decimal_places=3, null=True, blank=True)
 
@@ -109,7 +110,7 @@ class EvaluationItem(models.Model):
 
 class EvaluationScore(TimeStampedModel):
     evaluation = models.ForeignKey(Evaluation, on_delete=models.CASCADE, related_name="scores")
-    template_item = models.ForeignKey(TemplateItem, on_delete=models.PROTECT)
+    template_item = models.ForeignKey(TemplateQuestion, on_delete=models.PROTECT)
     score = models.PositiveSmallIntegerField()  # 1..5
     comment = models.TextField(blank=True, default="")
 
@@ -140,6 +141,27 @@ class EvaluationAnswer(TimeStampedModel):
 
     def __str__(self) -> str:
         return f"{self.evaluation_id} - {self.question_id}"
+
+
+class EvaluationBlockComment(models.Model):
+    evaluation = models.ForeignKey(
+        Evaluation,
+        on_delete=models.CASCADE,
+        related_name="block_comments",
+    )
+    block_code = models.CharField(max_length=10)
+    comment = models.TextField(blank=True, default="")
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=["evaluation", "block_code"],
+                name="uniq_eval_block_comment",
+            )
+        ]
+
+    def __str__(self) -> str:
+        return f"{self.evaluation_id} - {self.block_code}"
 
 
 class ReportFilterPreset(TimeStampedModel):

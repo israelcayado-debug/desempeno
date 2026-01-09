@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Evaluaci??n</title>
+  <title>Evaluación</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -11,9 +11,15 @@
   <p><a href="/my-team/">&larr; Volver a Mi equipo</a></p>
 
   <h1>Evaluar</h1>
+
+  {% if is_history %}
+    <div style="padding:10px; background:#f5f5f5; border:1px solid #ddd; margin-bottom:10px;">
+      <strong>Historico:</strong> esta evaluacion es de solo lectura.
+    </div>
+  {% endif %}
   <p><strong>Empleado:</strong> {{ employee.full_name }}</p>
   <p><strong>DNI:</strong> {{ employee.dni }}</p>
-  <p><strong>Periodo:</strong> {{ period.name }} ({{ period.start_date }} ??" {{ period.end_date }})</p>
+  <p><strong>Periodo:</strong> {{ period.name }} ({{ period.start_date }} - {{ period.end_date }})</p>
 
   {% if error %}
     <p style="color:red; white-space:pre-line;"><strong>Error:</strong> {{ error }}</p>
@@ -33,8 +39,19 @@
     </div>
   {% endif %}
 
+
+  {% if is_overdue %}
+    <div style="padding:10px; border:1px solid #b00; margin-bottom:10px; background:#fff3f3;">
+      <strong>Evaluacion fuera de plazo.</strong>
+    </div>
+  {% endif %}
+  {% if is_incomplete %}
+    <div style="padding:10px; border:1px solid #e0a800; margin-bottom:10px; background:#fff9e6;">
+      <strong>Faltan campos obligatorios por completar.</strong>
+    </div>
+  {% endif %}
   {% if evaluation %}
-    <p><strong>Evaluaci??n:</strong> ID {{ evaluation.id }} | Estado {{ evaluation.get_status_display }}</p>
+    <p><strong>Evaluación:</strong> ID {{ evaluation.id }} | Estado {{ evaluation.get_status_display }}</p>
     {% if evaluation.submitted_at %}<p><strong>Enviada:</strong> {{ evaluation.submitted_at }}</p>{% endif %}
     {% if evaluation.finalized_at %}<p><strong>Cerrada:</strong> {{ evaluation.finalized_at }}</p>{% endif %}
     {% if evaluation.reopened_at %}<p><strong>Reabierta:</strong> {{ evaluation.reopened_at }}</p>{% endif %}
@@ -45,11 +62,10 @@
     {% elif evaluation.final_score != None %}
       <p><strong>Score registrado:</strong> {{ evaluation.final_score }}</p>
     {% endif %}
-    {% endif %}
     {% if score_total != None %}<p><strong>Score total (items):</strong> {{ score_total }}</p>{% endif %}
     {% if block_scores %}
       <p><strong>Score por bloque:</strong>
-        {% for block, val in block_scores.items|dictsort %}
+        {% for block, val in block_scores.items|dictsort:"0" %}
           {{ block }}={{ val }}
         {% endfor %}
       </p>
@@ -57,7 +73,7 @@
     {% if pending_required_count %}<p><strong>Pendientes:</strong> {{ pending_required_count }}</p>{% endif %}
   {% endif %}
 
-  <p><strong>Puesto de evaluaci??n:</strong>
+  <p><strong>Puesto de evaluación:</strong>
     {% if employee.evaluation_position %}
       {{ employee.evaluation_position.code }} - {{ employee.evaluation_position.name }}
     {% else %}
@@ -86,64 +102,85 @@
         {% endif %}
 
         {% regroup items by section_title as section_list %}
-        {% for section in section_list %}
-          <h4>{{ section.grouper }}</h4>
+        {% for b in blocks %}
+          {% if b.code == "UNK" %}
+            <h3>Bloque Sin bloque</h3>
+          {% else %}
+            <h3>Bloque {{ b.code }}</h3>
+          {% endif %}
 
-          {% for item in section.list %}
-            <div
-              {% if evaluation.status == "DRAFT" and item.is_required and item.id in missing_required %}
-                style="border: 2px solid #c00; padding: 10px; margin: 10px 0; background: #fff3f3;"
-              {% else %}
-                style="padding: 10px; margin: 10px 0;"
-              {% endif %}
-            >
-              <strong>{{ item.question_text }}</strong>
-              {% if evaluation.status == "DRAFT" and item.is_required and item.id in missing_required %}
-                <span style="color:#c00; font-weight:700; margin-left:8px;">(Obligatoria pendiente)</span>
-              {% endif %}
+          {% for section in section_list %}
+            {% if b.code == "UNK" or section.grouper|block_code_from_section == b.code %}
+              <h4>{{ section.grouper }}</h4>
 
-              <div>
-                {% if item.question_type == "SCALE_1_5" %}
-                  {% for i in "12345" %}
-                    <label style="margin-right:8px;">
-                      <input type="radio"
-                             name="q_{{ item.id }}"
-                             value="{{ i }}"
-                             {% if item.value_scale|stringformat:"s" == i %}checked{% endif %}
-                             {% if not editable %}disabled{% endif %}>
-                      {{ i }}
-                    </label>
-                  {% endfor %}
+              {% for item in section.list %}
+                <div
+                  {% if evaluation.status == "DRAFT" and item.is_required and item.id in missing_required %}
+                    style="border: 2px solid #c00; padding: 10px; margin: 10px 0; background: #fff3f3;"
+                  {% else %}
+                    style="padding: 10px; margin: 10px 0;"
+                  {% endif %}
+                >
+                  <strong>{{ item.question_text }}</strong>
+                  {% if evaluation.status == "DRAFT" and item.is_required and item.id in missing_required %}
+                    <span style="color:#c00; font-weight:700; margin-left:8px;">(Obligatoria pendiente)</span>
+                  {% endif %}
 
-                {% elif item.question_type == "YES_NO" %}
-                  <label style="margin-right:8px;">
-                    <input type="radio"
-                           name="q_{{ item.id }}"
-                           value="1"
-                           {% if item.value_yes_no is True %}checked{% endif %}
-                           {% if not editable %}disabled{% endif %}>
-                    S??
-                  </label>
-                  <label>
-                    <input type="radio"
-                           name="q_{{ item.id }}"
-                           value="0"
-                           {% if item.value_yes_no is False %}checked{% endif %}
-                           {% if not editable %}disabled{% endif %}>
-                    No
-                  </label>
+                  <div>
+                    {% if item.question_type == "SCALE_1_5" %}
+                      {% for i in "12345" %}
+                        <label style="margin-right:8px;">
+                          <input type="radio"
+                                 name="q_{{ item.id }}"
+                                 value="{{ i }}"
+                                 {% if item.value_scale|stringformat:"s" == i %}checked{% endif %}
+                                 {% if not editable %}disabled{% endif %}>
+                          {{ i }}
+                        </label>
+                      {% endfor %}
 
-                {% elif item.question_type == "TEXT" %}
-                  <br>
-                  <textarea name="q_{{ item.id }}"
-                            rows="3"
-                            cols="60"
-                            {% if not editable %}disabled{% endif %}>{{ item.value_text|default:"" }}</textarea>
-                {% endif %}
-              </div>
-            </div>
+                    {% elif item.question_type == "YES_NO" %}
+                      <label style="margin-right:8px;">
+                        <input type="radio"
+                               name="q_{{ item.id }}"
+                               value="1"
+                               {% if item.value_yes_no is True %}checked{% endif %}
+                               {% if not editable %}disabled{% endif %}>
+                        Sí
+                      </label>
+                      <label>
+                        <input type="radio"
+                               name="q_{{ item.id }}"
+                               value="0"
+                               {% if item.value_yes_no is False %}checked{% endif %}
+                               {% if not editable %}disabled{% endif %}>
+                        No
+                      </label>
+
+                    {% elif item.question_type == "TEXT" %}
+                      <br>
+                      <textarea name="q_{{ item.id }}"
+                                rows="3"
+                                cols="60"
+                                {% if not editable %}disabled{% endif %}>{{ item.value_text|default:"" }}</textarea>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endfor %}
+            {% endif %}
           {% endfor %}
+
         {% endfor %}
+
+
+        <h3>Comentario global</h3>
+        {% if editable %}
+          <textarea name="overall_comment" rows="4" style="width:100%;">{{ evaluation.overall_comment }}</textarea>
+        {% else %}
+          <div style="white-space:pre-wrap; border:1px solid #ccc; padding:8px;">
+            {{ evaluation.overall_comment|default:"" }}
+          </div>
+        {% endif %}
 
         <h3>Comentario del evaluador</h3>
         {% if editable %}
@@ -181,12 +218,54 @@
           {% endif %}
         {% endif %}
 
+
       </form>
+
+      <details style="margin-top:16px;">
+        <summary><strong>Historico del empleado</strong></summary>
+        {% if history %}
+          <table style="width:100%; border-collapse: collapse; margin-top: 10px;">
+            <thead>
+              <tr>
+                <th style="text-align:left; border-bottom:1px solid #ccc; padding:6px;">Periodo</th>
+                <th style="text-align:left; border-bottom:1px solid #ccc; padding:6px;">Estado</th>
+                <th style="text-align:left; border-bottom:1px solid #ccc; padding:6px;">Ult. act.</th>
+                <th style="text-align:left; border-bottom:1px solid #ccc; padding:6px;">Resumen</th>
+                <th style="border-bottom:1px solid #ccc; padding:6px;"></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for h in history %}
+                <tr>
+                  <td style="padding:6px;">
+                    {{ h.period_name }}<br>
+                    <small>{{ h.period_start }} - {{ h.period_end }}</small>
+                  </td>
+                  <td style="padding:6px;">{{ h.status|default:"-" }}</td>
+                  <td style="padding:6px;">{{ h.updated_at|default:"-" }}</td>
+                  <td style="padding:6px;">
+                    {% if h.overall_comment %}
+                      <div><strong>Global:</strong> {{ h.overall_comment }}</div>
+                    {% else %}
+                      -
+                    {% endif %}
+                  </td>
+                  <td style="padding:6px; text-align:right;">
+                    <a href="{% url 'evaluation_history_view' h.id %}">Ver</a>
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {% else %}
+          <p style="margin-top:10px;">No hay evaluaciones previas registradas para este empleado.</p>
+        {% endif %}
+      </details>
     {% else %}
       <p>No hay items en esta evaluacion.</p>
     {% endif %}
   {% else %}
-    <p><strong>No hay plantilla asociada a esta evaluaci??n.</strong></p>
+    <p><strong>No hay plantilla asociada a esta evaluación.</strong></p>
   {% endif %}
 </body>
 </html>

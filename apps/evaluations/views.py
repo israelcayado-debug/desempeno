@@ -1,4 +1,4 @@
-import csv
+﻿import csv
 import io
 import logging
 import time
@@ -9,12 +9,14 @@ from datetime import datetime
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import PermissionDenied
 from django.core.paginator import Paginator
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotAllowed
 from django.shortcuts import render, redirect
 from django.db.models import Count, Max
 from django.db import models
 from django.urls import reverse
 from django.http import QueryDict
+from django.utils import timezone
+from django.utils.text import Truncator
 
 from apps.core.permissions import can_evaluate, is_hr_admin, is_manager
 from apps.org.models import Position
@@ -185,6 +187,22 @@ def build_period_report_queryset(request, period, user):
     return qs, {"status": status, "q": q, "sort": sort, "dir": direction}
 
 
+def get_block_codes(items):
+    seen = set()
+    ordered = []
+    for item in items:
+        code = block_from_section(item.section_title)
+        if code not in seen:
+            ordered.append(code)
+            seen.add(code)
+    priority = ["A", "B", "C", "D", "E"]
+    ordered_sorted = [c for c in priority if c in seen]
+    for code in ordered:
+        if code not in ordered_sorted:
+            ordered_sorted.append(code)
+    return ordered_sorted
+
+
 def build_querystring(request, *, exclude=None, overrides=None) -> str:
     exclude = set(exclude or [])
     qd = QueryDict("", mutable=True)
@@ -223,7 +241,6 @@ def user_role_label(user) -> str:
 
 
 @login_required
-@login_required
 def my_team(request):
     if not can_evaluate(request.user):
         raise PermissionDenied
@@ -244,9 +261,65 @@ def my_team(request):
         evals = (
             Evaluation.objects
             .filter(period=current_period, employee__in=employees)
-            .only("id", "employee_id", "status", "final_score")
+            .only("id", "employee_id", "status", "final_score", "overall_comment")
         )
         eval_by_employee_id = {ev.employee_id: ev for ev in evals}
+
+    alerts_by_employee_id = {}
+    today = timezone.now().date()
+    if current_period:
+        for e in employees:
+            ev = eval_by_employee_id.get(e.id)
+            alerts = []
+            if not ev:
+                alerts.append(
+                    {
+                        "code": "NOT_STARTED",
+                        "severity": "info",
+                        "text": "Sin iniciar",
+                    }
+                )
+            else:
+                is_sent = ev.status in {Evaluation.Status.SUBMITTED, Evaluation.Status.FINAL}
+                is_overdue = current_period.end_date and today > current_period.end_date and not is_sent
+                if is_overdue:
+                    alerts.append(
+                        {
+                            "code": "OVERDUE",
+                            "severity": "danger",
+                            "text": "Vencida",
+                        }
+                    )
+                if ev.status == Evaluation.Status.DRAFT and not is_overdue:
+                    alerts.append(
+                        {
+                            "code": "DRAFT",
+                            "severity": "warning",
+                            "text": "Borrador",
+                        }
+                    )
+                if not (ev.overall_comment or "").strip():
+                    alerts.append(
+                        {
+                            "code": "MISSING_REQUIRED",
+                            "severity": "warning",
+                            "text": "Faltan obligatorios",
+                        }
+                    )
+                if not can_edit_evaluation(request.user, ev):
+                    alerts.append(
+                        {
+                            "code": "BLOCKED",
+                            "severity": "info",
+                            "text": "Bloqueada",
+                        }
+                    )
+
+            for a in alerts:
+                a["action_url"] = (
+                    f"/evaluate/{e.id}/{current_period.id}/" if current_period else ""
+                )
+            alerts_by_employee_id[e.id] = alerts
 
     position_ids = [e.evaluation_position_id for e in employees if e.evaluation_position_id]
 
@@ -269,6 +342,7 @@ def my_team(request):
             "current_period": current_period,
             "template_by_position_id": template_by_position_id,
             "eval_by_employee_id": eval_by_employee_id,
+            "alerts_by_employee_id": alerts_by_employee_id,
 
         },
     )
@@ -308,7 +382,7 @@ def evaluate_employee(request, employee_id: int, period_id: int):
                         "period_locked": period_locked,
                         "override_allowed": override_allowed,
                         "override": override,
-                "error": "El empleado no tiene Puesto de Evaluación asignado.",
+                "error": "El empleado no tiene Puesto de EvaluaciÃ³n asignado.",
             },
         )
 
@@ -377,6 +451,28 @@ def evaluate_employee(request, employee_id: int, period_id: int):
     if created and template:
         create_items_from_template(evaluation, template)
     items = list(evaluation.items.all().order_by("display_order", "id"))
+    block_codes = get_block_codes(items)
+    blocks = [{"code": code} for code in block_codes]
+
+    history_qs = (
+        Evaluation.objects.filter(employee=employee)
+        .exclude(id=evaluation.id)
+        .select_related("period")
+        .order_by("-period__start_date", "-updated_at")
+    )[:12]
+    history = []
+    for ev in history_qs:
+        history.append(
+            {
+                "id": ev.id,
+                "period_name": ev.period.name,
+                "period_start": ev.period.start_date,
+                "period_end": ev.period.end_date,
+                "status": ev.get_status_display(),
+                "updated_at": ev.updated_at,
+                "overall_comment": Truncator((ev.overall_comment or "").strip()).chars(120),
+            }
+        )
 
     error = None
     editable = can_edit_evaluation(request.user, evaluation)
@@ -442,6 +538,7 @@ def evaluate_employee(request, employee_id: int, period_id: int):
                         "created": created,
                         "template": template,
                         "items": items,
+                        "blocks": blocks,
                         "missing_required": set(),
                         "can_close": can_finalize,
                         "editable": editable,
@@ -464,6 +561,7 @@ def evaluate_employee(request, employee_id: int, period_id: int):
                         "created": created,
                         "template": template,
                         "items": items,
+                        "blocks": blocks,
                         "missing_required": set(),
                         "can_close": can_finalize,
                         "editable": editable,
@@ -484,6 +582,7 @@ def evaluate_employee(request, employee_id: int, period_id: int):
                         "created": created,
                         "template": template,
                         "items": items,
+                        "blocks": blocks,
                         "missing_required": set(),
                         "can_close": can_finalize,
                         "editable": editable,
@@ -511,6 +610,7 @@ def evaluate_employee(request, employee_id: int, period_id: int):
                         "created": created,
                         "template": template,
                         "items": items,
+                        "blocks": blocks,
                         "missing_required": set(),
                         "can_close": can_finalize,
                         "editable": editable,
@@ -531,6 +631,7 @@ def evaluate_employee(request, employee_id: int, period_id: int):
                         "created": created,
                         "template": template,
                         "items": items,
+                        "blocks": blocks,
                         "missing_required": set(),
                         "can_close": can_finalize,
                         "editable": editable,
@@ -552,6 +653,7 @@ def evaluate_employee(request, employee_id: int, period_id: int):
                         "created": created,
                         "template": template,
                         "items": items,
+                        "blocks": blocks,
                         "missing_required": set(),
                         "can_close": can_finalize,
                         "editable": editable,
@@ -570,6 +672,9 @@ def evaluate_employee(request, employee_id: int, period_id: int):
             comment = request.POST.get("evaluator_comment", "").strip()
             if evaluation.evaluator_comment != comment:
                 evaluation.evaluator_comment = comment
+            overall_comment = (request.POST.get("overall_comment") or "").strip()
+            if evaluation.overall_comment != overall_comment:
+                evaluation.overall_comment = overall_comment
 
             # 1) Guardar respuestas
             for item in items:
@@ -613,6 +718,7 @@ def evaluate_employee(request, employee_id: int, period_id: int):
                         "created": created,
                         "template": template,
                         "items": items,
+                        "blocks": blocks,
                         "missing_required": set(),
                         "can_close": can_finalize,
                         "editable": editable,
@@ -645,6 +751,7 @@ def evaluate_employee(request, employee_id: int, period_id: int):
         update_fields = []
         if action in ("save", "submit") and editable:
             update_fields.append("evaluator_comment")
+            update_fields.append("overall_comment")
         if evaluation.status != previous_status:
             update_fields.extend(
                 ["status", "submitted_at", "finalized_at", "reopened_at", "reopen_reason", "status_changed_at"]
@@ -658,6 +765,8 @@ def evaluate_employee(request, employee_id: int, period_id: int):
             return redirect("evaluate_employee", employee_id=employee.id, period_id=period.id)
 
     items = list(evaluation.items.all().order_by("display_order", "id"))
+    block_codes = get_block_codes(items)
+    blocks = [{"code": code} for code in block_codes]
     if evaluation.status == Evaluation.Status.DRAFT and editable:
         missing_required = get_missing_required_item_ids(items)
     else:
@@ -665,6 +774,13 @@ def evaluate_employee(request, employee_id: int, period_id: int):
     score_total = compute_final_score(items)
     block_scores = compute_block_scores(items)
     pending_required_count = len(missing_required)
+    today = timezone.now().date()
+    is_overdue = (
+        period.end_date is not None
+        and today > period.end_date
+        and evaluation.status not in {Evaluation.Status.SUBMITTED, Evaluation.Status.FINAL}
+    )
+    is_incomplete = pending_required_count > 0 or not (evaluation.overall_comment or "").strip()
 
     return render(
         request,
@@ -679,15 +795,69 @@ def evaluate_employee(request, employee_id: int, period_id: int):
             "created": created,
             "template": template,
             "items": items,
+            "blocks": blocks,
+            "history": history,
             "missing_required": missing_required,
             "can_close": can_finalize,
             "editable": editable,
             "score_total": score_total,
             "block_scores": block_scores,
             "pending_required_count": pending_required_count,
+            "is_overdue": is_overdue,
+            "is_incomplete": is_incomplete,
+            "is_history": False,
             "error": error,
 
 
+        },
+    )
+
+
+@login_required
+def evaluation_history_view(request, evaluation_id: int):
+    if request.method != "GET":
+        return HttpResponseNotAllowed(["GET"])
+    if not can_evaluate(request.user):
+        raise PermissionDenied
+
+    ev = Evaluation.objects.select_related("employee", "period").filter(id=evaluation_id).first()
+    if not ev:
+        raise PermissionDenied
+
+    visible = employees_visible_to(request.user).filter(id=ev.employee_id).exists()
+    if not visible:
+        raise PermissionDenied
+
+    items = list(ev.items.all().order_by("display_order", "id"))
+    block_codes = get_block_codes(items)
+    blocks = [{"code": code} for code in block_codes]
+    score_total = compute_final_score(items)
+    block_scores = compute_block_scores(items)
+    pending_required_count = 0
+
+    return render(
+        request,
+        "evaluations/evaluate_employee.html",
+        {
+            "employee": ev.employee,
+            "period": ev.period,
+            "evaluation": ev,
+            "created": False,
+            "template": ev.template,
+            "items": items,
+            "blocks": blocks,
+            "history": [],
+            "missing_required": set(),
+            "can_close": False,
+            "editable": False,
+            "score_total": score_total,
+            "block_scores": block_scores,
+            "pending_required_count": pending_required_count,
+            "is_history": True,
+            "period_locked": False,
+            "override_allowed": False,
+            "override": False,
+            "error": None,
         },
     )
 
@@ -736,7 +906,6 @@ def report_period(request, period_id: int | None = None):
             period = EvaluationPeriod.objects.filter(id=request.GET.get("period")).first()
         if not period:
             period = resolve_default_period()
-            show_period_selector = False
 
     if not period:
         return render(
@@ -858,13 +1027,16 @@ def report_period_export_csv(request, period_id: int):
             "position_code",
             "status",
             "score_total",
+            "overall_comment",
             "submitted_at",
             "finalized_at",
             "reopened_at",
         ]
     )
+    evals = list(qs)
+
     row_count = 0
-    for ev in qs:
+    for ev in evals:
         writer.writerow(
             [
                 period.name,
@@ -873,6 +1045,7 @@ def report_period_export_csv(request, period_id: int):
                 ev.frozen_position_code,
                 ev.status,
                 ev.final_score or "",
+                ev.overall_comment or "",
                 ev.submitted_at or "",
                 ev.finalized_at or "",
                 ev.reopened_at or "",
@@ -1055,6 +1228,13 @@ def report_period_export_xlsx(request, period_id: int):
             content_type="text/html; charset=utf-8",
         )
 
+    def to_naive(value):
+        if value is None:
+            return ""
+        if timezone.is_aware(value):
+            return timezone.make_naive(value)
+        return value
+
     wb = openpyxl.Workbook()
     ws_summary = wb.active
     ws_summary.title = "Resumen"
@@ -1066,12 +1246,14 @@ def report_period_export_xlsx(request, period_id: int):
             "position_code",
             "status",
             "score_total",
+            "overall_comment",
             "submitted_at",
             "finalized_at",
             "reopened_at",
         ]
     )
-    for ev in eval_qs:
+    evals = list(eval_qs)
+    for ev in evals:
         ws_summary.append(
             [
                 period.name,
@@ -1080,9 +1262,10 @@ def report_period_export_xlsx(request, period_id: int):
                 ev.frozen_position_code,
                 ev.status,
                 ev.final_score or "",
-                ev.submitted_at or "",
-                ev.finalized_at or "",
-                ev.reopened_at or "",
+                ev.overall_comment or "",
+                to_naive(ev.submitted_at),
+                to_naive(ev.finalized_at),
+                to_naive(ev.reopened_at),
             ]
         )
 

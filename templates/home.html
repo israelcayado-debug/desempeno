@@ -1,0 +1,46 @@
+﻿{% extends "base.html" %}
+{% block title %}Inicio | Desempeño{% endblock %}
+
+{% block content %}
+  <div class="card">
+    <h1 style="margin:0 0 6px 0;">Inicio</h1>
+    <p class="muted" style="margin:0 0 14px 0;">
+      Acceso rápido a las funciones principales. {% if not user.is_authenticated %}Inicia sesión para continuar.{% endif %}
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3 style="margin-top:0;">Mi equipo</h3>
+        <p class="muted">Listado de empleados y estado de evaluaciones.</p>
+        {% if user.is_authenticated %}
+          <a class="btn primary" href="{% url 'my_team' %}">Ir a Mi equipo</a>
+        {% else %}
+          <a class="btn primary" href="{% url 'login' %}?next={% url 'my_team' %}">Entrar para acceder</a>
+        {% endif %}
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0;">Informes</h3>
+        <p class="muted">Resumen por periodo, exportaciones CSV/XLSX.</p>
+        {% if user.is_authenticated %}
+          <a class="btn primary" href="{% url 'report_period' %}">Ir a Informes</a>
+        {% else %}
+          <a class="btn primary" href="{% url 'login' %}?next={% url 'report_period' %}">Entrar para acceder</a>
+        {% endif %}
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0;">Administración</h3>
+        <p class="muted">Panel admin de Django.</p>
+        <a class="btn" href="/admin/">Abrir admin</a>
+      </div>
+      {% if user.is_staff %}
+        <div class="card">
+          <h3 style="margin-top:0;">Importar plantillas</h3>
+          <p class="muted">Carga un DOCX y crea la plantilla en la base de datos.</p>
+          <a class="btn primary" href="{% url 'import_template_docx' %}">Importar DOCX</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

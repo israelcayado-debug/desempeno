@@ -1,1 +1,46 @@
-<!doctype html><html><body>{% block content %}{% endblock %}</body></html>
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Desempeño{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#f6f7fb;color:#111;}
+    header{background:#111;color:#fff;padding:14px 18px;}
+    header .row{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;}
+    a{color:inherit}
+    main{max-width:980px;margin:28px auto;padding:0 18px;}
+    .card{background:#fff;border:1px solid #e6e8ef;border-radius:10px;padding:18px;box-shadow:0 1px 2px rgba(0,0,0,.04);}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}
+    .btn{display:inline-block;padding:10px 12px;border-radius:8px;border:1px solid #cfd5e3;background:#fff;text-decoration:none}
+    .btn.primary{background:#1f2937;color:#fff;border-color:#1f2937}
+    .muted{color:#6b7280;font-size:14px}
+    .pill{display:inline-block;padding:4px 8px;border-radius:999px;background:#eef2ff;border:1px solid #dbe2ff;font-size:12px}
+  </style>
+</head>
+<body>
+<header>
+  <div class="row">
+    <div>
+      <strong>Evaluación del desempeño</strong>
+      <span class="pill" style="margin-left:10px;">MVP</span>
+    </div>
+    <div>
+      {% if user.is_authenticated %}
+        <span class="muted" style="color:#cbd5e1;">{{ user.get_username }}</span>
+        <form method="post" action="{% url 'logout' %}" style="display:inline;">
+          {% csrf_token %}
+          <button class="btn" type="submit">Salir</button>
+        </form>
+      {% else %}
+        <a class="btn primary" href="{% url 'login' %}">Entrar</a>
+      {% endif %}
+    </div>
+  </div>
+</header>
+
+<main>
+  {% block content %}{% endblock %}
+</main>
+</body>
+</html>

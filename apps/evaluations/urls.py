@@ -4,6 +4,7 @@ from . import views
 urlpatterns = [
     path("my-team/", views.my_team, name="my_team"),
     path("evaluate/<int:employee_id>/<int:period_id>/", views.evaluate_employee, name="evaluate_employee"),
+    path("evaluation/<int:evaluation_id>/history/", views.evaluation_history_view, name="evaluation_history_view"),
     path("reports/period/", views.report_period, name="report_period"),
     path("reports/period/<int:period_id>/", views.report_period, name="report_period_detail"),
     path("reports/period/<int:period_id>/export.csv", views.report_period_export_csv, name="report_period_export_csv"),
