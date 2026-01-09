@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Reporte por periodo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <p><a href="/my-team/">&larr; Volver</a></p>
+  <h1>Reporte por periodo</h1>
+
+  {% if show_period_selector %}
+  <form method="get" style="margin-bottom:15px;">
+    <label for="period"><strong>Periodo:</strong></label>
+    <select id="period" name="period">
+      {% for p in periods %}
+        <option value="{{ p.id }}" {% if period and p.id == period.id %}selected{% endif %}>{{ p.name }}</option>
+      {% endfor %}
+    </select>
+
+    <label for="status" style="margin-left:10px;">Estado:</label>
+    <select id="status" name="status">
+      <option value="" {% if not status_filter %}selected{% endif %}>Todos</option>
+      <option value="DRAFT" {% if status_filter == 'DRAFT' %}selected{% endif %}>Draft</option>
+      <option value="SUBMITTED" {% if status_filter == 'SUBMITTED' %}selected{% endif %}>Submitted</option>
+      <option value="FINAL" {% if status_filter == 'FINAL' %}selected{% endif %}>Final</option>
+    </select>
+
+    <label for="q" style="margin-left:10px;">Buscar:</label>
+    <input id="q" name="q" value="{{ search }}" placeholder="Nombre o DNI">
+
+    <label for="page_size" style="margin-left:10px;">Tamano:</label>
+    <select id="page_size" name="page_size">
+      <option value="25" {% if page_size == 25 %}selected{% endif %}>25</option>
+      <option value="50" {% if page_size == 50 %}selected{% endif %}>50</option>
+      <option value="100" {% if page_size == 100 %}selected{% endif %}>100</option>
+    </select>
+
+    <button type="submit">Aplicar</button>
+  </form>
+{% endif %}
+
+  {% if presets %}
+    <div style="margin-bottom:15px;">
+      <form method="post" style="display:inline-block;">
+        {% csrf_token %}
+        <input type="hidden" name="action" value="save_preset">
+        <label for="preset_name"><strong>Guardar preset:</strong></label>
+        <input id="preset_name" name="preset_name" placeholder="Nombre del preset">
+        <button type="submit">Guardar</button>
+      </form>
+
+      <form method="post" style="display:inline-block; margin-left:10px;">
+        {% csrf_token %}
+        <input type="hidden" name="action" value="delete_preset">
+        <label for="preset_id"><strong>Eliminar preset:</strong></label>
+        <select id="preset_id" name="preset_id">
+          {% for preset in presets %}
+            <option value="{{ preset.id }}">{{ preset.name }}</option>
+          {% endfor %}
+        </select>
+        <button type="submit">Eliminar</button>
+      </form>
+    </div>
+
+    <div style="margin-bottom:15px;">
+      <strong>Presets:</strong>
+      {% for preset in presets %}
+        <a href="/reports/period/?{{ preset.query_params }}" style="margin-right:8px;">{{ preset.name }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if period %}
+    <div style="margin-bottom:10px;">
+      <strong>Totales:</strong>
+      DRAFT={{ totals.DRAFT }} | SUBMITTED={{ totals.SUBMITTED }} | FINAL={{ totals.FINAL }} | TOTAL={{ totals.TOTAL }}
+    </div>
+      <div style="margin-bottom:10px;">
+        <em>Totales del periodo (sin aplicar filtros ni busqueda).</em>
+      </div>
+      <div style="margin-bottom:10px;">
+        <em>Mostrando {{ filtered_count }} resultados (con filtros).</em>
+      </div>
+
+    <div style="margin-bottom:10px;">
+      <a href="/reports/period/{{ period.id }}/export.csv?{{ export_qs_filtered }}">Export CSV resumen (filtrado)</a>
+      | <a href="/reports/period/{{ period.id }}/export_items.csv?{{ export_qs_filtered }}">Export CSV items (filtrado)</a>
+      | <a href="/reports/period/{{ period.id }}/export.xlsx?{{ export_qs_filtered }}">Export XLSX (filtrado)</a>
+      <br>
+      <a href="/reports/period/{{ period.id }}/export.csv?{{ export_qs_page }}">Export CSV resumen (pagina)</a>
+      | <a href="/reports/period/{{ period.id }}/export_items.csv?{{ export_qs_page }}">Export CSV items (pagina)</a>
+      | <a href="/reports/period/{{ period.id }}/export.xlsx?{{ export_qs_page }}">Export XLSX (pagina)</a>
+    </div>
+      <p><em>Los exports respetan los filtros y la busqueda actuales.</em></p>
+      <p><em>XLSX recomendado para tamanos medios. Para volumenes grandes, use CSV.</em></p>
+
+    <table border="1" cellpadding="6" cellspacing="0">
+      <thead>
+        <tr>
+          <th>
+            {% if sort_qs %}
+              <a href="?{{ sort_qs }}&sort=employee&dir={% if sort == 'employee' and dir == 'asc' %}desc{% else %}asc{% endif %}">Empleado</a>
+            {% else %}
+              <a href="?sort=employee&dir={% if sort == 'employee' and dir == 'asc' %}desc{% else %}asc{% endif %}">Empleado</a>
+            {% endif %}
+          </th>
+          <th>DNI</th>
+          <th>Puesto</th>
+          <th>
+            {% if sort_qs %}
+              <a href="?{{ sort_qs }}&sort=status&dir={% if sort == 'status' and dir == 'asc' %}desc{% else %}asc{% endif %}">Estado</a>
+            {% else %}
+              <a href="?sort=status&dir={% if sort == 'status' and dir == 'asc' %}desc{% else %}asc{% endif %}">Estado</a>
+            {% endif %}
+          </th>
+          <th>
+            {% if sort_qs %}
+              <a href="?{{ sort_qs }}&sort=score&dir={% if sort == 'score' and dir == 'asc' %}desc{% else %}asc{% endif %}">Score</a>
+            {% else %}
+              <a href="?sort=score&dir={% if sort == 'score' and dir == 'asc' %}desc{% else %}asc{% endif %}">Score</a>
+            {% endif %}
+          </th>
+          <th>
+            {% if sort_qs %}
+              <a href="?{{ sort_qs }}&sort=updated&dir={% if sort == 'updated' and dir == 'asc' %}desc{% else %}asc{% endif %}">Actualizado</a>
+            {% else %}
+              <a href="?sort=updated&dir={% if sort == 'updated' and dir == 'asc' %}desc{% else %}asc{% endif %}">Actualizado</a>
+            {% endif %}
+          </th>
+          <th>
+            {% if sort_qs %}
+              <a href="?{{ sort_qs }}&sort=submitted&dir={% if sort == 'submitted' and dir == 'asc' %}desc{% else %}asc{% endif %}">Enviado</a>
+            {% else %}
+              <a href="?sort=submitted&dir={% if sort == 'submitted' and dir == 'asc' %}desc{% else %}asc{% endif %}">Enviado</a>
+            {% endif %}
+          </th>
+          <th>
+            {% if sort_qs %}
+              <a href="?{{ sort_qs }}&sort=finalized&dir={% if sort == 'finalized' and dir == 'asc' %}desc{% else %}asc{% endif %}">Cerrado</a>
+            {% else %}
+              <a href="?sort=finalized&dir={% if sort == 'finalized' and dir == 'asc' %}desc{% else %}asc{% endif %}">Cerrado</a>
+            {% endif %}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for ev in evaluations %}
+          <tr>
+            <td>{{ ev.employee.full_name }}</td>
+            <td>{{ ev.employee.dni }}</td>
+            <td>{{ ev.frozen_position_code }}</td>
+            <td>{{ ev.get_status_display }}</td>
+            <td>{{ ev.final_score }}</td>
+            <td>{{ ev.status_changed_at|default:ev.updated_at }}</td>
+            <td>{{ ev.submitted_at }}</td>
+            <td>{{ ev.finalized_at }}</td>
+          </tr>
+        {% empty %}
+          <tr><td colspan="8">Sin resultados</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% if page_obj %}
+      <div style="margin-top:10px;">
+        <span>Pagina {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}</span>
+        {% if page_obj.has_previous %}
+          {% if base_qs %}
+            <a href="?{{ base_qs }}&page={{ page_obj.previous_page_number }}">Anterior</a>
+          {% else %}
+            <a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
+          {% endif %}
+        {% endif %}
+        {% if page_obj.has_next %}
+          {% if base_qs %}
+            <a href="?{{ base_qs }}&page={{ page_obj.next_page_number }}">Siguiente</a>
+          {% else %}
+            <a href="?page={{ page_obj.next_page_number }}">Siguiente</a>
+          {% endif %}
+        {% endif %}
+      </div>
+    {% endif %}
+  {% else %}
+    <p>No hay periodos disponibles.</p>
+  {% endif %}
+</body>
+</html>

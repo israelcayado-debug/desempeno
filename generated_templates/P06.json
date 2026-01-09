@@ -1,0 +1,182 @@
+{
+  "base_code": "P06",
+  "source_file": "P06_Ficha_Responsable_Mantenimiento_ID_GP2.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Planificación de mantenimiento",
+          "description": "Programación eficaz de preventivos y correctivos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Disponibilidad de equipos",
+          "description": "Reducción de paradas y tiempos de inactividad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de averías",
+          "description": "Rapidez y eficacia en la resolución de incidencias.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Proyectos de mejora",
+          "description": "Ejecución de mejoras técnicas y optimización de procesos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de recursos",
+          "description": "Uso eficiente de personal, repuestos y servicios externos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Seguridad PRL",
+          "description": "Integración de la seguridad en trabajos de mantenimiento.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento normativo",
+          "description": "Respeto a normas técnicas, legales y procedimientos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Calidad de intervenciones",
+          "description": "Trabajos ejecutados con rigor y durabilidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Documentación técnica",
+          "description": "Registros de mantenimiento y documentación actualizada.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de riesgos",
+          "description": "Identificación y mitigación de riesgos técnicos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Liderazgo técnico",
+          "description": "Dirección y coordinación del equipo de mantenimiento.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Asunción de decisiones técnicas críticas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Implicación con continuidad operativa y mejora continua.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de la presión",
+          "description": "Respuesta eficaz ante incidencias urgentes.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Ética profesional",
+          "description": "Conducta responsable y confidencial.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Instalaciones y equipos",
+          "description": "Conocimiento profundo de maquinaria e instalaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Automatización y sistemas",
+          "description": "Conocimiento de sistemas eléctricos, neumáticos y control.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "I+D y mejora continua",
+          "description": "Capacidad de innovación y desarrollo técnico.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Herramientas de gestión",
+          "description": "Uso de GMAO, ERP y herramientas de seguimiento.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Normativa técnica",
+          "description": "Conocimiento de reglamentos y estándares aplicables.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Coordinación interna",
+          "description": "Colaboración con producción, calidad e ingeniería.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación técnica",
+          "description": "Claridad en informes y explicaciones técnicas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Soporte transversal",
+          "description": "Apoyo técnico a otros departamentos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de proveedores",
+          "description": "Relación eficaz con servicios externos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Representación interna",
+          "description": "Imagen profesional dentro de la organización.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "base_code": "P03",
+  "source_file": "P03_Ficha_Responsable_Calidad_PRL_GP2.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Gestión del sistema de calidad",
+          "description": "Mantenimiento y mejora del sistema de gestión.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento normativo",
+          "description": "Adecuación a normas y requisitos legales.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de auditorías",
+          "description": "Planificación y ejecución de auditorías.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguimiento de NCs",
+          "description": "Cierre eficaz de no conformidades.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Indicadores de calidad y PRL",
+          "description": "Seguimiento y análisis de KPIs.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Prevención de riesgos laborales",
+          "description": "Implantación y control de medidas preventivas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Evaluación de riesgos",
+          "description": "Actualización y control de evaluaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de incidentes",
+          "description": "Análisis de accidentes e incidentes.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Formación y sensibilización",
+          "description": "Promoción de la cultura preventiva.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Control documental",
+          "description": "Gestión correcta de registros.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Asunción de responsabilidades críticas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Implicación con la seguridad y la calidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Autonomía",
+          "description": "Gestión independiente del área.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de la presión",
+          "description": "Respuesta eficaz ante situaciones críticas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Ética profesional",
+          "description": "Conducta responsable y confidencial.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Normativa de calidad",
+          "description": "ISO 9001, ISO 3834 y otros estándares.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Normativa PRL",
+          "description": "Legislación de seguridad y salud laboral.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Procesos productivos",
+          "description": "Conocimiento de fabricación y riesgos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Herramientas de gestión",
+          "description": "Uso de software de calidad y seguimiento.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Análisis de riesgos",
+          "description": "Identificación y evaluación de riesgos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Coordinación interna",
+          "description": "Trabajo con producción, proyectos y RRHH.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación",
+          "description": "Transmisión clara de requisitos y resultados.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con organismos externos",
+          "description": "Interlocución con auditorías y autoridades.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Asesoramiento interno",
+          "description": "Soporte técnico a otros departamentos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Representación de la empresa",
+          "description": "Imagen profesional ante terceros.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

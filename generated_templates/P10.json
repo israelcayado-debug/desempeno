@@ -1,0 +1,152 @@
+{
+  "base_code": "P10",
+  "source_file": "P10_Personal Técnico Administrativo Contable y de Facturación_GP4.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento de plazos fiscales",
+          "description": "Facturas, asientos e información contable registrados dentro de los plazos establecidos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos e hitos de Facturación a los clientes",
+          "description": "Emisión de las facturas de venta en los plazos e hitos acordados con los clientes.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Exactitud documental",
+          "description": "Registros sin errores, uso correcto de formatos",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Organización del trabajo",
+          "description": "Priorización, eficiencia, autonomía",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento normativo",
+          "description": "Legislación fiscal",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Control documental",
+          "description": "Revisión de las condiciones de venta firmadas con los clientes",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Ejecución rigurosa sin supervisión constante",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Seriedad en tareas críticas",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y método",
+          "description": "Control documental y digital",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Iniciativa",
+          "description": "Propuesta de mejoras, detección temprana de riesgos",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Confidencialidad",
+          "description": "Discreción con la facturación realizada",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Fiscalidad",
+          "description": "Requisitos, normativa, plazos",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Procesos contables",
+          "description": "Albaranes, Facturas, asientos contables,",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Protocolos internos",
+          "description": "Condiciones de Venta de la empresa Condiciones de compra de los clientes",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Competencia digital",
+          "description": "ERP, Paquete Office, apps de los clientes",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Coordinación con Dpto. Comercial y Dpto. Técnico",
+          "description": "Interacción eficaz para respetar las condiciones de facturación establecidas en los contratos con los clientes",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con proveedores",
+          "description": "Interacción fluida con proveedores y suministradores",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cooperación interna",
+          "description": "Apoya al dpto. De Administración en aquello que pueda surgir",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud profesional",
+          "description": "Respeto, colaboración, empatía",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

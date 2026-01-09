@@ -1,0 +1,122 @@
+{
+  "base_code": "P31",
+  "source_file": "P31_Operario_Taller_GP6.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 40,
+      "items": [
+        {
+          "subcriterion": "Rendimiento en tareas asignadas",
+          "description": "Cumple el ritmo de trabajo establecido",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos",
+          "description": "Realiza tareas dentro del tiempo previsto",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Ejecución correcta",
+          "description": "Reduce errores y retrabajos en tareas básicas",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Seguridad",
+          "description": "Usa adecuadamente EPIs y cumple normativa del taller",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cuidado del material",
+          "description": "Evita daños a piezas y herramientas",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden del puesto",
+          "description": "Mantiene el puesto de trabajo limpio y ordenado",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Actitud",
+          "description": "Disposición positiva y respeto",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de normas",
+          "description": "Sigue procedimientos y supervisión",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Disciplina",
+          "description": "Acepta instrucciones sin resistencia",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Herramientas básicas",
+          "description": "Maneja correctamente herramientas manuales",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Aprendizaje",
+          "description": "Capacidad de asumir tareas nuevas del taller",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 5,
+      "items": [
+        {
+          "subcriterion": "Apoyo a oficiales",
+          "description": "Colabora en tareas de mayor complejidad",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación",
+          "description": "Reporta incidencias de forma adecuada",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

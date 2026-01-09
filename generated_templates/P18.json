@@ -1,0 +1,182 @@
+{
+  "base_code": "P18",
+  "source_file": "P18_Ficha_Project_Manager_Junior_GP3.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Seguimiento de proyecto",
+          "description": "Control de hitos, plazos y tareas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión documental",
+          "description": "Preparación y actualización de informes.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos",
+          "description": "Entrega de tareas en tiempo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Soporte al PM Senior",
+          "description": "Apoyo eficaz en la gestión diaria.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Organización del trabajo",
+          "description": "Planificación y priorización.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento contractual",
+          "description": "Respeto a requisitos del cliente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Control documental",
+          "description": "Uso correcto de formatos y revisiones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de incidencias",
+          "description": "Seguimiento de desviaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Rigurosidad técnica",
+          "description": "Atención al detalle.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad y PRL",
+          "description": "Respeto de normas de seguridad.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Fiabilidad en tareas asignadas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Implicación con objetivos del proyecto.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Autonomía progresiva",
+          "description": "Asunción gradual de responsabilidades.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión del estrés",
+          "description": "Manejo adecuado de presión.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Ética profesional",
+          "description": "Comportamiento responsable.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Procesos industriales",
+          "description": "Comprensión de fabricación y calidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Documentación técnica",
+          "description": "Lectura de planos e ITPs.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de costes",
+          "description": "Seguimiento básico de costes.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Herramientas de gestión",
+          "description": "Uso de ERP y Excel.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Normativa",
+          "description": "Conocimiento general ASME, EN, ISO.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Coordinación interna",
+          "description": "Interacción eficaz con departamentos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación con cliente",
+          "description": "Claridad y profesionalidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Trabajo en equipo",
+          "description": "Colaboración con PM Senior.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Redacción de informes",
+          "description": "Informes claros y estructurados.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud profesional",
+          "description": "Respeto y disponibilidad.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

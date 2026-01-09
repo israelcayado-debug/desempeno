@@ -1,0 +1,122 @@
+{
+  "base_code": "P23",
+  "source_file": "P23_Auxiliar_Almacen_GP6.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 40,
+      "items": [
+        {
+          "subcriterion": "Rendimiento en tareas básicas",
+          "description": "Cumplimiento de preparación, movimientos y entrega de materiales",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de tiempos",
+          "description": "Ejecución de tareas dentro de los plazos establecidos",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Organización del flujo",
+          "description": "Colocación correcta de materiales y reposición básica",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Orden y 5S",
+          "description": "Mantenimiento del área limpia y organizada",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad",
+          "description": "Cumplimiento de EPIs y normas de manipulación",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cuidado del material",
+          "description": "Evita daños en mercancía y embalajes",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Puntualidad",
+          "description": "Cumplimiento horario y asistencia",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Respeto de normas",
+          "description": "Disciplina y cumplimiento de procedimientos",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud colaborativa",
+          "description": "Buena disposición hacia el trabajo",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Conocimiento de referencias",
+          "description": "Identificación básica de materiales y ubicaciones",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Aprendizaje",
+          "description": "Capacidad de adquirir nuevas tareas de almacén",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 5,
+      "items": [
+        {
+          "subcriterion": "Colaboración",
+          "description": "Apoyo al oficial de almacén y producción",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación",
+          "description": "Comunica incidencias de manera adecuada",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

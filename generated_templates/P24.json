@@ -1,0 +1,122 @@
+{
+  "base_code": "P24",
+  "source_file": "P24_Responsable_Turno_GP4.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 40,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento de planificación",
+          "description": "Garantiza el avance del turno según lo previsto.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión del equipo",
+          "description": "Distribuye tareas y coordina recursos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Control de ritmo de producción",
+          "description": "Supervisa rendimientos y optimiza tiempos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Control de calidad",
+          "description": "Verifica cumplimiento de instrucciones y estándares.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad en el turno",
+          "description": "Vela por el cumplimiento estricto de normas de PRL.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y disciplina",
+          "description": "Mantiene el área de trabajo organizada y segura.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Liderazgo",
+          "description": "Ejercita autoridad técnica y organizativa con equilibrio.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Responsabilidad operativa",
+          "description": "Afronta incidencias y toma decisiones adecuadas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Trato profesional",
+          "description": "Mantiene disciplina y comunicación respetuosa.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Conocimiento de procesos",
+          "description": "Domina los procesos de fabricación del taller.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Manejo de documentación",
+          "description": "Interpreta planos, órdenes y procedimientos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Coordinación con mandos",
+          "description": "Informa incidencias y progreso del turno.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación con operarios",
+          "description": "Transmite instrucciones de forma clara y eficaz.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

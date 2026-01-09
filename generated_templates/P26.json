@@ -1,0 +1,122 @@
+{
+  "base_code": "P26",
+  "source_file": "P26_Oficial_Soldadura_GP5.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 45,
+      "items": [
+        {
+          "subcriterion": "Rendimiento en soldadura",
+          "description": "Cumple los metros de soldadura y plazos planificados.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de planos y WPS",
+          "description": "Ejecuta los cordones conforme a planos y procedimientos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Retrabajos",
+          "description": "Minimiza rechazos y retrabajos en inspecciones.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Calidad de cordones",
+          "description": "Cumple criterios visuales y de ensayo no destructivo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad en soldadura",
+          "description": "Aplica normas de seguridad, protege a terceros y usa EPIs.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y limpieza del puesto",
+          "description": "Mantiene el área de soldadura ordenada y sin residuos peligrosos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Rigor en el trabajo",
+          "description": "Muestra seriedad y cuidado en la preparación y ejecución de soldaduras.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Respeto a instrucciones",
+          "description": "Cumple indicaciones de inspección, calidad y producción.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Se implica en el cumplimiento de objetivos del taller.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Conocimiento de procesos",
+          "description": "Domina el/los procesos de soldadura asignados (MMA, MIG/MAG, TIG, etc.).",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Lectura de planos y WPS",
+          "description": "Interpreta planos, simbología de soldadura y WPS.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 5,
+      "items": [
+        {
+          "subcriterion": "Coordinación con montadores y supervisores",
+          "description": "Se coordina adecuadamente para el avance del trabajo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación de incidencias",
+          "description": "Informa de problemas de ajuste, preparación o consumibles.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

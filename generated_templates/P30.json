@@ -1,0 +1,182 @@
+{
+  "base_code": "P30",
+  "source_file": "P30_Ficha_Oficial_Maquinista_GP5.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Rendimiento operativo",
+          "description": "Eficiencia en el uso de maquinaria y tiempos de ciclo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos",
+          "description": "Entrega de piezas y trabajos en las fechas establecidas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Preparación de máquinas",
+          "description": "Configuración correcta, puesta a punto y uso de utillaje.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Calidad del mecanizado",
+          "description": "Precisión dimensional, acabado y ausencia de defectos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Organización del trabajo",
+          "description": "Orden, flujo de tareas y aprovechamiento del tiempo.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Control dimensional",
+          "description": "Verificación correcta con calibres, micrómetros y otros instrumentos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento normativo",
+          "description": "Respeto a procedimientos, instrucciones y tolerancias.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de incidencias",
+          "description": "Comunicación proactiva de desviaciones y fallos de máquina.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad PRL",
+          "description": "Cumplimiento estricto de EPIs, protecciones y normas de seguridad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cuidado de equipos",
+          "description": "Uso correcto de maquinaria y mantenimiento básico.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Cumplimiento riguroso del trabajo asignado.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Constancia, disponibilidad y actitud profesional.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y limpieza",
+          "description": "Mantenimiento de un puesto de trabajo limpio y organizado.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Iniciativa",
+          "description": "Capacidad para anticipar necesidades y resolver problemas menores.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Disciplina operativa",
+          "description": "Respeto de instrucciones y flujos del taller.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Maquinaria y procesos",
+          "description": "Conocimiento y dominio de máquinas del taller.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Interpretación de planos",
+          "description": "Capacidad para comprender cotas, tolerancias y geometrías.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Herramientas de medición",
+          "description": "Uso correcto de instrumentos de control.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Materiales",
+          "description": "Conocimiento básico de aceros, tolerancias y reactividad en mecanizado.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Competencia digital",
+          "description": "Uso de ERP, partes de trabajo y registros de producción.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Coordinación interna",
+          "description": "Colaboración con supervisores, soldadores y otros maquinistas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación",
+          "description": "Transmisión clara de incidencias y necesidades de máquina.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud profesional",
+          "description": "Respeto, cooperación y disposición al trabajo en equipo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con Calidad",
+          "description": "Interacción correcta para controles y verificaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cooperación general",
+          "description": "Apoyo a tareas auxiliares cuando es necesario.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

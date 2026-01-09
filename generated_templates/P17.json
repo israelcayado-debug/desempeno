@@ -1,0 +1,182 @@
+{
+  "base_code": "P17",
+  "source_file": "P17_Ficha_Project_Manager_Senior_GP2.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Planificación del proyecto",
+          "description": "Definición de hitos, recursos y cronograma.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos",
+          "description": "Entrega de hitos conforme a planificación.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Control económico",
+          "description": "Seguimiento de costes, márgenes y desviaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de cambios",
+          "description": "Control de variaciones contractuales y claims.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cierre de proyecto",
+          "description": "Finalización ordenada y conforme a contrato.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento contractual",
+          "description": "Asegura requisitos técnicos y de cliente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión documental",
+          "description": "Control de documentación técnica y contractual.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de riesgos",
+          "description": "Identificación y mitigación de riesgos del proyecto.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de no conformidades",
+          "description": "Seguimiento y cierre eficaz de NCs.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad y PRL",
+          "description": "Integración de la seguridad en la gestión del proyecto.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Liderazgo",
+          "description": "Dirección y motivación del equipo de proyecto.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Asunción de decisiones críticas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Implicación con resultados y cliente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de la presión",
+          "description": "Toma de decisiones bajo estrés.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Ética y confidencialidad",
+          "description": "Conducta profesional y responsable.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Procesos industriales",
+          "description": "Dominio de fabricación, calidad y pruebas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Normativa aplicable",
+          "description": "ASME, EN, ISO, PED y requisitos cliente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Contratación y compras",
+          "description": "Gestión técnica de subcontratos y suministros.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Herramientas de gestión",
+          "description": "ERP, planificación, control de costes.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Documentación técnica",
+          "description": "Interpretación y validación de documentación.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Relación con cliente",
+          "description": "Interlocución técnica y comercial eficaz.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Coordinación interna",
+          "description": "Alineación con ingeniería, producción y calidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión del equipo",
+          "description": "Delegación y seguimiento del equipo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación",
+          "description": "Claridad en reuniones e informes.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Representación de la empresa",
+          "description": "Imagen profesional ante terceros.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

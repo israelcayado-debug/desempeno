@@ -1,0 +1,152 @@
+{
+  "base_code": "P09",
+  "source_file": "P09_Auxiliar Admvo. de Recepción_GP6.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 40,
+      "items": [
+        {
+          "subcriterion": "Priorización de tareas",
+          "description": "Dentro de sus tareas prioriza",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos laborales y de Convenio",
+          "description": "Nóminas e información para SS elaborada dentro de los plazos legales establecidos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Exactitud documental",
+          "description": "Registros sin errores, uso correcto de formatos",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión del portal del empleado",
+          "description": "Gestiona la documentación e información enviada a traves del portal",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Organización del trabajo",
+          "description": "Priorización, eficiencia, autonomía",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento normativo",
+          "description": "LOPD, Plan Igualdad, Plan LGTBI, Convenio Metal, Legislación Fiscal y Laboral",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Control documental",
+          "description": "Revisión de toda la documentación laboral y de gestion de personal generada se adapta a los protocolos marcados por la Organización (lenguaje inclusivo, etc.)",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Ejecución de tareas básicas sin supervision, resto de tareas van supervisadas por el Dpto. De Administración",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Imagen alineada a los valores de la empresa",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y método",
+          "description": "Control documental y digital",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Iniciativa",
+          "description": "Propuesta de mejoras,",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Confidencialidad",
+          "description": "Discrección con el manejo de justificantes y fichajes",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Procesos contables",
+          "description": "Contabilización de facturas poco complejas. Escaneo de albaranes. Archivo de ambos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Competencia digital",
+          "description": "ERP, Paquete Office, IDC",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 5,
+      "items": [
+        {
+          "subcriterion": "Coordinación con Dirección y mandos intermedios",
+          "description": "Interacción eficaz con Dirección y mandos intermedios",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con proveedores",
+          "description": "Interacción fluida con proveedores y suministradores",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión del personal",
+          "description": "Informa, canaliza y comunica de forma eficiente las decisiones organizativas que afecten al personal.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cooperación interna",
+          "description": "Apoya a los mandos intermendios en la gestion del personal a su cargo",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud profesional",
+          "description": "Respeto, colaboración, empatía",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

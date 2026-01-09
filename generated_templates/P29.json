@@ -1,0 +1,182 @@
+{
+  "base_code": "P29",
+  "source_file": "P29_Ficha_Oficial_Movimientos_GP5.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Ejecución de maniobras",
+          "description": "Precisión y eficiencia en movimientos y elevaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos",
+          "description": "Agilidad en el suministro y posicionamiento de materiales.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Preparación de trabajo",
+          "description": "Revisión del entorno, elementos de izado y condiciones de seguridad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Apoyo operativo",
+          "description": "Colaboración fluida con soldadores, maquinistas y supervisores.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Organización del área",
+          "description": "Orden en pasillos, zonas de depósito y puesta en punto.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Seguridad PRL",
+          "description": "Uso correcto de EPIs, señalización y zonas de trabajo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Inspección de equipos",
+          "description": "Verifica eslingas, grilletes, cáncamos y medios de elevación.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Calidad en movimientos",
+          "description": "Movimientos suaves, sin golpes ni daños a piezas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de procedimientos",
+          "description": "Aplicación de normas internas de izado y manipulación.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de incidencias",
+          "description": "Comunicación rápida de riesgos, fallos o deterioros.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Rigor en tareas críticas de elevación y manipulación.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Disposición y constancia ante necesidades del taller.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y limpieza",
+          "description": "Mantenimiento de áreas despejadas y seguras.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Iniciativa",
+          "description": "Prevención de riesgos y mejora en maniobras.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Disciplina operativa",
+          "description": "Respeto a instrucciones, señales y normas internas.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Medios de izado",
+          "description": "Conocimiento de eslingas, grilletes, cáncamos y límites de carga.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Señalización",
+          "description": "Dominio de señales manuales y comunicación en maniobras.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Interpretación básica de planos",
+          "description": "Comprensión del posicionamiento y orientación de piezas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Riesgos asociados",
+          "description": "Identificación de puntos críticos en el entorno de trabajo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Competencia digital",
+          "description": "Gestión de partes, avisos y comunicación interna.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Coordinación interna",
+          "description": "Colaboración con taller, calidad y logística.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación",
+          "description": "Señalización clara y avisos oportunos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con compañeros",
+          "description": "Profesionalidad, respeto y cooperación.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Apoyo en maniobras",
+          "description": "Asistencia eficaz en elevaciones complejas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud profesional",
+          "description": "Disponibilidad y comportamiento adecuado.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

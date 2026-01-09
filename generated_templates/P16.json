@@ -1,0 +1,122 @@
+{
+  "base_code": "P16",
+  "source_file": "P16_Aux_Adm_Compras_GP5.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 45,
+      "items": [
+        {
+          "subcriterion": "Gestión de tareas administrativas",
+          "description": "Tramita pedidos, albaranes y documentación de compras con fluidez.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos",
+          "description": "Realiza registros y comunicaciones dentro de los tiempos requeridos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Exactitud en datos",
+          "description": "Introduce y revisa datos en el sistema sin errores significativos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Calidad documental",
+          "description": "Mantiene orden en archivos de pedidos, ofertas y contratos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de procedimientos",
+          "description": "Respeta el circuito de aprobación y firma establecido.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Confidencialidad básica",
+          "description": "Trata con discreción la información de proveedores y precios.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Compromiso con el trabajo",
+          "description": "Muestra interés por sacar el trabajo adelante.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Puntualidad y disciplina",
+          "description": "Cumple el horario y las instrucciones del responsable.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud de servicio interno",
+          "description": "Ofrece un trato adecuado a otros departamentos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Manejo de herramientas ofimáticas",
+          "description": "Utiliza de forma correcta el ERP y hojas de cálculo básicas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Conocimiento de procesos de compra",
+          "description": "Comprende las fases básicas del proceso de compras.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 5,
+      "items": [
+        {
+          "subcriterion": "Comunicación con Compras y Logística",
+          "description": "Se coordina adecuadamente con el equipo de compras.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con proveedores (nivel auxiliar)",
+          "description": "Mantiene una comunicación educada y correcta cuando es necesario.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

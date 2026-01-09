@@ -1,0 +1,122 @@
+{
+  "base_code": "P12",
+  "source_file": "P12_Tecnico_PRL_GP4.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 40,
+      "items": [
+        {
+          "subcriterion": "Inspecciones y controles",
+          "description": "Realiza las inspecciones planificadas en tiempo y forma.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión documental PRL",
+          "description": "Mantiene actualizados registros, evaluaciones y permisos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Soporte a la actividad preventiva",
+          "description": "Asiste a mandos y trabajadores en la aplicación de medidas preventivas.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento legal y normativo",
+          "description": "Aplica adecuadamente la normativa y los procedimientos internos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Participación en investigación de incidentes",
+          "description": "Colabora en el análisis básico de incidentes y propuestas de mejora.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Rigor documental",
+          "description": "Genera documentación clara, completa y trazable.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Orientación preventiva",
+          "description": "Promueve activamente conductas seguras.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Implicación en medidas",
+          "description": "Hace seguimiento de las acciones correctoras.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seriedad profesional",
+          "description": "Aborda los temas de seguridad con firmeza y respeto.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Conocimiento normativa PRL",
+          "description": "Conoce la legislación y requisitos básicos aplicables al sector.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Procedimientos internos de PRL",
+          "description": "Domina los procedimientos preventivos de la empresa.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Comunicación con taller y oficinas",
+          "description": "Transmite instrucciones de seguridad de forma clara y comprensible.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Coordinación con Calidad, Producción y Mantenimiento",
+          "description": "Trabaja de manera coordinada con otros departamentos.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

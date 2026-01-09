@@ -1,0 +1,122 @@
+{
+  "base_code": "P13",
+  "source_file": "P13_Tecnico_Calidad_GP4.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 40,
+      "items": [
+        {
+          "subcriterion": "Ejecución de controles",
+          "description": "Realiza controles según el plan y requerimientos del proyecto.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Registros de inspección",
+          "description": "Completa informes con exactitud y trazabilidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Soporte al taller",
+          "description": "Atiende solicitudes de calidad para verificar piezas y procesos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento de procedimientos",
+          "description": "Aplica correctamente los procedimientos de calidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Uso de instrumentos",
+          "description": "Utiliza calibradores, micrómetros y equipos de medición adecuadamente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad",
+          "description": "Cumple normas de seguridad y uso de EPIs en zonas de trabajo.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Rigor técnico",
+          "description": "Realiza verificaciones con precisión y objetividad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Comprende la importancia del control de calidad para el cliente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud profesional",
+          "description": "Mantiene trato adecuado con operarios, supervisores y técnicos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Normas de calidad",
+          "description": "Comprende requisitos dimensionales y normativos aplicables.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Interpretación de planos",
+          "description": "Lee e interpreta planos y especificaciones técnicas.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Comunicación de incidencias",
+          "description": "Informa de no conformidades con claridad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con otros departamentos",
+          "description": "Coopera con PRL, Producción y Oficina Técnica.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

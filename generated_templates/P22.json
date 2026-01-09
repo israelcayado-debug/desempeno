@@ -1,0 +1,182 @@
+{
+  "base_code": "P22",
+  "source_file": "P22_Ficha_Oficial_Almacen_GP5.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Recepción de materiales",
+          "description": "Agilidad y precisión en descargas, verificaciones y registros.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Preparación de pedidos",
+          "description": "Exactitud en kits, consumibles y materiales para producción.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de ubicaciones",
+          "description": "Orden, limpieza y correcta disposición del almacén.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Control de inventario",
+          "description": "Exactitud en conteos y regularizaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Organización del trabajo",
+          "description": "Planificación, eficiencia y gestión de prioridades.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Verificación de materiales",
+          "description": "Comprobación de cantidades, estado y documentación.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Identificación y etiquetado",
+          "description": "Correcto marcado y trazabilidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento normativo",
+          "description": "Uso de EPIs y procedimientos internos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad PRL",
+          "description": "Prevención de riesgos en cargas, estanterías y tránsito.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de incidencias",
+          "description": "Comunicación de daños, faltas o desviaciones.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Rigor y fiabilidad en tareas clave del almacén.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Actitud proactiva y disponibilidad ante necesidades del taller.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y limpieza",
+          "description": "Mantenimiento de espacios seguros y organizados.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Iniciativa",
+          "description": "Propuesta de mejoras y prevención de errores.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Disciplina operativa",
+          "description": "Respeto a flujos de trabajo y procedimientos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "ERP y registros",
+          "description": "Dominio de entradas, salidas y ubicaciones en el sistema.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Materiales",
+          "description": "Conocimiento básico de aceros, consumibles y referencias.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Documentación logística",
+          "description": "Albaranes, etiquetas, certificados.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Medios de manipulación",
+          "description": "Uso de traspaletas, carretillas y elementos auxiliares.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Trazabilidad",
+          "description": "Control completo desde recepción a entrega.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Coordinación interna",
+          "description": "Correcta interacción con producción, compras y calidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación",
+          "description": "Transmisión clara de incidencias y necesidades.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con compañeros",
+          "description": "Profesionalidad, respeto y colaboración.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Apoyo general",
+          "description": "Asistencia a movimientos y operaciones auxiliares.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud profesional",
+          "description": "Comportamiento adecuado y disposición.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

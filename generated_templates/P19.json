@@ -1,0 +1,182 @@
+{
+  "base_code": "P19",
+  "source_file": "P19_Ficha_Delineante_GP4.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Elaboración de planos",
+          "description": "Precisión y claridad en los planos generados.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos",
+          "description": "Entrega de documentación en los tiempos establecidos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actualización de revisiones",
+          "description": "Control riguroso de versiones y trazabilidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Listas de materiales",
+          "description": "Exactitud en despieces, pesajes y referencias.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Organización del trabajo",
+          "description": "Gestión eficiente de tareas y prioridades.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Exactitud técnica",
+          "description": "Planos libres de errores dimensionales o de interpretación.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Normas de delineación",
+          "description": "Aplicación correcta de acotación, simbología y tolerancias.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento documental",
+          "description": "Uso correcto de formatos, cajetines y codificaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Revisión y autocontrol",
+          "description": "Verificación previa antes de entregar documentación.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad y orden",
+          "description": "Entorno de trabajo organizado y seguro.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Rigor en la ejecución y cumplimiento de tareas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Implicación con los proyectos y soporte al equipo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y limpieza",
+          "description": "Documentación organizada y entorno de trabajo adecuado.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Iniciativa",
+          "description": "Aporta mejoras en planos, criterios o metodologías.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Disciplina operativa",
+          "description": "Cumplimiento de procedimientos internos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Software CAD/CAE",
+          "description": "Dominio de AutoCAD, SolidWorks u otros sistemas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Lectura de planos",
+          "description": "Interpretación técnica correcta de requerimientos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Normativa aplicable",
+          "description": "ASME, EN, ISO, tolerancias y estándares del sector.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Modelado 2D/3D",
+          "description": "Generación de modelos y despieces precisos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Competencia digital",
+          "description": "Gestión de archivos, revisiones, ERP y herramientas de ingeniería.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Coordinación interna",
+          "description": "Colaboración eficaz con ingeniería, calidad y producción.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación",
+          "description": "Claridad en especificaciones y consultas técnicas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con compañeros",
+          "description": "Actitud profesional y cooperativa.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Apoyo técnico",
+          "description": "Asistencia a fabricación con esquemas y aclaraciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud profesional",
+          "description": "Respeto, disponibilidad y conducta adecuada.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

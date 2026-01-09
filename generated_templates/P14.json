@@ -1,0 +1,122 @@
+{
+  "base_code": "P14",
+  "source_file": "P14_Auxiliar_Calidad_GP5.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 45,
+      "items": [
+        {
+          "subcriterion": "Ejecución de controles",
+          "description": "Realiza los controles de calidad asignados en tiempo y forma.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Registro de datos",
+          "description": "Registra correctamente mediciones, resultados y formularios.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Soporte a producción",
+          "description": "Da soporte fluido a las necesidades de control de calidad en taller.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento de procedimientos",
+          "description": "Aplica las instrucciones de calidad sin desviaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y limpieza",
+          "description": "Mantiene el área de trabajo y equipos en condiciones adecuadas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad",
+          "description": "Cumple las normas de seguridad y uso de EPIs en su actividad.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Cuidado en el trabajo",
+          "description": "Muestra atención al detalle y rigor en los controles.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Puntualidad y disciplina",
+          "description": "Respeta horarios, instrucciones y organización del trabajo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud colaborativa",
+          "description": "Colabora con el técnico de calidad y otros departamentos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Conocimiento básico de controles",
+          "description": "Comprende los controles que realiza y su finalidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Aprendizaje",
+          "description": "Muestra evolución y capacidad para asumir controles algo más complejos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 5,
+      "items": [
+        {
+          "subcriterion": "Comunicación de incidencias",
+          "description": "Informa de no conformidades y anomalías de forma clara.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con compañeros",
+          "description": "Mantiene una relación correcta con producción y calidad.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

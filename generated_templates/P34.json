@@ -1,0 +1,122 @@
+{
+  "base_code": "P34",
+  "source_file": "P34_Oficial_Tratamientos_Termicos_GP5.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 45,
+      "items": [
+        {
+          "subcriterion": "Preparación de cargas",
+          "description": "Organiza y carga hornos según planificación y capacidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Ejecución de ciclos",
+          "description": "Lanza y supervisa ciclos de tratamiento según instrucciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos",
+          "description": "Asegura la disponibilidad de piezas tratadas dentro del plazo.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento de curvas",
+          "description": "Respeta temperaturas, rampas y tiempos definidos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad en hornos",
+          "description": "Aplica normas de seguridad en zonas calientes y manipulación de cargas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cuidado de piezas",
+          "description": "Evita daños mecánicos o choques térmicos innecesarios.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad sobre el proceso",
+          "description": "Es consciente del impacto del tratamiento en la calidad final.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Rigor en el control",
+          "description": "Supervisa temperaturas y tiempos con atención.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Disciplina",
+          "description": "Cumple instrucciones y procedimientos escritos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Conocimiento de equipos",
+          "description": "Conoce funcionamiento de hornos, controles e instrumentación básica.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Curvas y materiales",
+          "description": "Comprende las diferencias básicas entre tratamientos y materiales.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 5,
+      "items": [
+        {
+          "subcriterion": "Coordinación con producción y calidad",
+          "description": "Se coordina para secuenciar cargas y verificaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación de incidencias de ciclo",
+          "description": "Informa de anomalías en hornos o resultados.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

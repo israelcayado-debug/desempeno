@@ -1,0 +1,182 @@
+{
+  "base_code": "P05",
+  "source_file": "P05_Ficha_Responsable_Departamento_Tecnico_GP2.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Definición técnica de proyectos",
+          "description": "Correcta especificación técnica de soluciones y proyectos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Soporte a ofertas",
+          "description": "Apoyo técnico en la preparación de propuestas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos técnicos",
+          "description": "Entrega de documentación y decisiones técnicas en plazo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de recursos técnicos",
+          "description": "Asignación eficiente del equipo técnico.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Resolución de problemas",
+          "description": "Capacidad de dar soluciones técnicas eficaces.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento normativo",
+          "description": "Aplicación correcta de códigos, normas y especificaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Validación técnica",
+          "description": "Revisión y aprobación rigurosa de documentación.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de riesgos técnicos",
+          "description": "Identificación y mitigación de riesgos técnicos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Integración con Calidad",
+          "description": "Coordinación con el sistema de calidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad técnica",
+          "description": "Consideración de aspectos de seguridad en el diseño.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Liderazgo técnico",
+          "description": "Dirección y desarrollo del equipo técnico.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Asunción de decisiones técnicas críticas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Implicación con los objetivos globales de la empresa.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de la presión",
+          "description": "Toma de decisiones bajo carga de trabajo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Ética profesional",
+          "description": "Conducta responsable y confidencial.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Ingeniería de producto",
+          "description": "Dominio de soluciones técnicas del negocio.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Normativa y códigos",
+          "description": "ASME, EN, ISO, PED y requisitos cliente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Procesos productivos",
+          "description": "Conocimiento de fabricación y ensayos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Herramientas técnicas",
+          "description": "Uso de software de cálculo, CAD y gestión.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Documentación técnica",
+          "description": "Estructuración y control de documentación.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Interlocución con clientes",
+          "description": "Comunicación técnica clara y eficaz.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Coordinación interna",
+          "description": "Trabajo fluido con producción, calidad y compras.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación interna",
+          "description": "Transmisión clara de criterios técnicos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Apoyo transversal",
+          "description": "Soporte técnico a otros departamentos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Representación técnica",
+          "description": "Imagen profesional ante terceros.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

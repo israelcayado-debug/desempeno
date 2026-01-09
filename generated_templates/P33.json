@@ -1,0 +1,122 @@
+{
+  "base_code": "P33",
+  "source_file": "P33_Auxiliar_Electricista_GP6.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 40,
+      "items": [
+        {
+          "subcriterion": "Ejecución de tareas",
+          "description": "Realiza correctamente tareas eléctricas básicas",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de órdenes",
+          "description": "Sigue instrucciones del oficial electricista",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Ritmo de trabajo",
+          "description": "Mantiene un rendimiento adecuado al puesto",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Seguridad eléctrica",
+          "description": "Cumple normas eléctricas y de bloqueo/etiquetado",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cuidado de instalaciones",
+          "description": "Evita daños y errores en el trabajo",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y limpieza",
+          "description": "Mantiene herramientas y zona de trabajo en orden",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Disciplina",
+          "description": "Respeta indicaciones técnicas y normas internas",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud",
+          "description": "Buena disposición y respeto hacia compañeros",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Realiza tareas con rigor y atención",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Material eléctrico básico",
+          "description": "Identifica cables, protecciones y herramientas",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Aprendizaje",
+          "description": "Capacidad de adquirir tareas más complejas",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 5,
+      "items": [
+        {
+          "subcriterion": "Colaboración",
+          "description": "Apoya al equipo de mantenimiento",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación",
+          "description": "Reporta incidencias correctamente",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

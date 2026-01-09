@@ -1,0 +1,152 @@
+{
+  "base_code": "P02",
+  "source_file": "P02_Responsable Adminisración_GP1.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 40,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento de Objetivos [cambio]",
+          "description": "Grado de cumplimiento de los objetivos asignados, entrega de resultados en plazo",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de Plazos",
+          "description": "Organización del calendario administrativo del Dpto., estableciendo prioridades y plazos para cada proceso (facturación, cierres mensuales, pagos, impuestos, etc)",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de KPIs Clave",
+          "description": "Evolución positiva de los indicadores en periodos sucesivos",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Organización del trabajo",
+          "description": "Priorización, eficiencia y capacidad para resolver problemas",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento normativo",
+          "description": "Capacidad para aplicar correctamente las leyes, mantener la documentación en regla y minimizar riesgos legales o sanciones para la empresa.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Calidad del Trabajo",
+          "description": "Exactitud y rigor en la realización de tareas",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Supervisión de tareas críticas asegurando precisión y confidencialidad",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Cumplimiento de los objetivos estratégicos, administrativos y financieros de la empresa",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Liderazgo",
+          "description": "Capacidad para guiar, motivar y coordinar al equipo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de conflictos",
+          "description": "Identifica y resuelve conflictos internos de manera justa y constructiva, fomentando un clima laboral positivo",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Integridad y ética profesional",
+          "description": "Honestidad y transparencia en la gestión de información sensible.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Normativa fiscal, laboral, contable y financiera",
+          "description": "Conocimiento actualizado de leyes fiscales, tributarias, laborales, mercantiles aplicables a la organización",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión administrativa",
+          "description": "Capacidad para organizar procesos administrativos, optimizar procedimientos internos y garantizar la correcta documentación y archivo",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Planificación y control",
+          "description": "Habilidad para elaborar proyecciones financieras, indicadores de gestión y reportes analíticos para la toma de decisiones",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Competencia digital",
+          "description": "Manejo avanzado de ERP, hojas de cálculo y herramientas de análisis financiero",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Representación externa",
+          "description": "Interactúa con bancos, asesores, auditores, proveedores, clientes y organismos oficiales de forma profesional",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación interna",
+          "description": "Transmite información financiera y administrativa de manera clara y comprensible",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión del personal",
+          "description": "Informa, canaliza y comunica de forma eficiente las decisiones organizativas que afecten al personal.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud profesional",
+          "description": "Respeto, colaboración, empatía",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

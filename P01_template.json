@@ -1,0 +1,182 @@
+{
+  "base_code": "P01",
+  "source_file": "P01_Ficha_Director_Gerente_GP1.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Resultados y Dirección Estratégica",
+      "weight_percent": 40,
+      "items": [
+        {
+          "subcriterion": "Definición estratégica",
+          "description": "Establecimiento de visión, estrategia y objetivos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Resultados económicos",
+          "description": "Cumplimiento de objetivos de facturación y rentabilidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Crecimiento del negocio",
+          "description": "Desarrollo de nuevos mercados y oportunidades.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Toma de decisiones",
+          "description": "Decisiones estratégicas oportunas y fundamentadas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguimiento de resultados",
+          "description": "Control y análisis de KPIs globales.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Organización y Gobierno",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Estructura organizativa",
+          "description": "Adecuación de la organización a la estrategia.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión del equipo directivo",
+          "description": "Liderazgo y alineación del comité de dirección.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gobernanza y control",
+          "description": "Supervisión de sistemas de control interno.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de riesgos",
+          "description": "Identificación y mitigación de riesgos empresariales.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento normativo",
+          "description": "Respeto a obligaciones legales y éticas.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Liderazgo y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Liderazgo",
+          "description": "Inspiración, coherencia y ejemplo personal.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Asunción de responsabilidades globales.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de la presión",
+          "description": "Toma de decisiones en entornos complejos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Ética y valores",
+          "description": "Promoción de cultura corporativa y valores.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Implicación con la empresa y su futuro.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento del Negocio",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Conocimiento del mercado",
+          "description": "Entendimiento del sector y entorno competitivo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Modelo de negocio",
+          "description": "Dominio de palancas económicas y operativas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Capacidad financiera",
+          "description": "Comprensión de estados financieros y cash-flow.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Innovación",
+          "description": "Impulso a la mejora y modernización.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Visión a largo plazo",
+          "description": "Planificación sostenible del crecimiento.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Representación y Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Relación con clientes clave",
+          "description": "Interlocución estratégica.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con propiedad",
+          "description": "Comunicación clara y transparente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Representación institucional",
+          "description": "Imagen de la empresa ante terceros.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación interna",
+          "description": "Transmisión clara de objetivos y decisiones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Reputación corporativa",
+          "description": "Protección y refuerzo de la marca.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

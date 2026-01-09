@@ -1,0 +1,122 @@
+{
+  "base_code": "P08",
+  "source_file": "P08_Comercial_Junior_GP4.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 40,
+      "items": [
+        {
+          "subcriterion": "Elaboración de ofertas",
+          "description": "Prepara ofertas y presupuestos siguiendo formatos y requisitos definidos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguimiento comercial básico",
+          "description": "Realiza llamadas, correos y seguimientos sencillos con clientes.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión documental comercial",
+          "description": "Mantiene actualizada la documentación en CRM/ERP y archivos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Calidad documental",
+          "description": "Prepara documentación sin errores relevantes de forma y contenido.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de procedimientos comerciales",
+          "description": "Respeta los circuitos internos de revisión y aprobación.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Confidencialidad de la información",
+          "description": "Trata con discreción datos de clientes, precios y condiciones.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Actitud comercial",
+          "description": "Muestra interés por aprender, iniciativa y orientación al cliente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso con las tareas",
+          "description": "Cumple plazos y objetivos de trabajo asignados.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Profesionalidad en el trato",
+          "description": "Mantiene un trato educado y correcto con clientes y compañeros.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Conocimiento de productos/servicios",
+          "description": "Comprende las características básicas de los productos de la empresa.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Manejo de herramientas comerciales",
+          "description": "Utiliza adecuadamente CRM, ERP y herramientas ofimáticas.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Relación con el equipo comercial",
+          "description": "Colabora con comerciales senior y respeta indicaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación interna",
+          "description": "Transfiere información de clientes y oportunidades de forma clara.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

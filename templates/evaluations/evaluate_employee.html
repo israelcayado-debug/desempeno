@@ -2,16 +2,62 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Evaluación</title>
+  <title>Evaluaci??n</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  {% load eval_extras %}
+
   <p><a href="/my-team/">&larr; Volver a Mi equipo</a></p>
 
   <h1>Evaluar</h1>
   <p><strong>Empleado:</strong> {{ employee.full_name }}</p>
   <p><strong>DNI:</strong> {{ employee.dni }}</p>
-  <p><strong>Puesto de evaluación:</strong>
+  <p><strong>Periodo:</strong> {{ period.name }} ({{ period.start_date }} ??" {{ period.end_date }})</p>
+
+  {% if error %}
+    <p style="color:red; white-space:pre-line;"><strong>Error:</strong> {{ error }}</p>
+  {% endif %}
+
+
+  {% if period_locked %}
+    <div style="padding:10px; border:1px solid #b00; margin-bottom:10px;">
+      <strong>Periodo cerrado.</strong>
+      {% if override_allowed %}
+        {% if not override %}
+          <a href="?override=1" style="margin-left:10px;">Abrir en modo override</a>
+        {% else %}
+          <span style="margin-left:10px;"><strong>Modo override activo</strong></span>
+        {% endif %}
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if evaluation %}
+    <p><strong>Evaluaci??n:</strong> ID {{ evaluation.id }} | Estado {{ evaluation.get_status_display }}</p>
+    {% if evaluation.submitted_at %}<p><strong>Enviada:</strong> {{ evaluation.submitted_at }}</p>{% endif %}
+    {% if evaluation.finalized_at %}<p><strong>Cerrada:</strong> {{ evaluation.finalized_at }}</p>{% endif %}
+    {% if evaluation.reopened_at %}<p><strong>Reabierta:</strong> {{ evaluation.reopened_at }}</p>{% endif %}
+    {% if evaluation.reopen_reason %}<p><strong>Motivo:</strong> {{ evaluation.reopen_reason }}</p>{% endif %}
+    <p><strong>Puesto congelado:</strong> {{ evaluation.frozen_position_code }} - {{ evaluation.frozen_position_name }}</p>
+    {% if evaluation.status == "DRAFT" %}
+      <p><strong>Score provisional:</strong> calculado desde items.</p>
+    {% elif evaluation.final_score != None %}
+      <p><strong>Score registrado:</strong> {{ evaluation.final_score }}</p>
+    {% endif %}
+    {% endif %}
+    {% if score_total != None %}<p><strong>Score total (items):</strong> {{ score_total }}</p>{% endif %}
+    {% if block_scores %}
+      <p><strong>Score por bloque:</strong>
+        {% for block, val in block_scores.items|dictsort %}
+          {{ block }}={{ val }}
+        {% endfor %}
+      </p>
+    {% endif %}
+    {% if pending_required_count %}<p><strong>Pendientes:</strong> {{ pending_required_count }}</p>{% endif %}
+  {% endif %}
+
+  <p><strong>Puesto de evaluaci??n:</strong>
     {% if employee.evaluation_position %}
       {{ employee.evaluation_position.code }} - {{ employee.evaluation_position.name }}
     {% else %}
@@ -19,6 +65,128 @@
     {% endif %}
   </p>
 
-  <p>Formulario de evaluación: pendiente de implementar en el siguiente paso.</p>
+  {% if template %}
+    <hr>
+    <h3>Plantilla: {{ template.name }} (v{{ template.version }})</h3>
+
+    {% if items %}
+      <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="action" id="action-input" value="save">
+        {% if override %}<input type="hidden" name="override" value="1">{% endif %}
+
+        {% if not editable %}
+          <p style="color:#b00;"><strong>Nota:</strong> Esta evaluacion no es editable en su estado actual.</p>
+        {% endif %}
+
+        {% if evaluation.status == "DRAFT" and missing_required %}
+          <div style="border:1px solid #c00; padding:10px; margin: 15px 0; background:#fff3f3;">
+            Faltan {{ missing_required|length }} preguntas obligatorias por completar.
+          </div>
+        {% endif %}
+
+        {% regroup items by section_title as section_list %}
+        {% for section in section_list %}
+          <h4>{{ section.grouper }}</h4>
+
+          {% for item in section.list %}
+            <div
+              {% if evaluation.status == "DRAFT" and item.is_required and item.id in missing_required %}
+                style="border: 2px solid #c00; padding: 10px; margin: 10px 0; background: #fff3f3;"
+              {% else %}
+                style="padding: 10px; margin: 10px 0;"
+              {% endif %}
+            >
+              <strong>{{ item.question_text }}</strong>
+              {% if evaluation.status == "DRAFT" and item.is_required and item.id in missing_required %}
+                <span style="color:#c00; font-weight:700; margin-left:8px;">(Obligatoria pendiente)</span>
+              {% endif %}
+
+              <div>
+                {% if item.question_type == "SCALE_1_5" %}
+                  {% for i in "12345" %}
+                    <label style="margin-right:8px;">
+                      <input type="radio"
+                             name="q_{{ item.id }}"
+                             value="{{ i }}"
+                             {% if item.value_scale|stringformat:"s" == i %}checked{% endif %}
+                             {% if not editable %}disabled{% endif %}>
+                      {{ i }}
+                    </label>
+                  {% endfor %}
+
+                {% elif item.question_type == "YES_NO" %}
+                  <label style="margin-right:8px;">
+                    <input type="radio"
+                           name="q_{{ item.id }}"
+                           value="1"
+                           {% if item.value_yes_no is True %}checked{% endif %}
+                           {% if not editable %}disabled{% endif %}>
+                    S??
+                  </label>
+                  <label>
+                    <input type="radio"
+                           name="q_{{ item.id }}"
+                           value="0"
+                           {% if item.value_yes_no is False %}checked{% endif %}
+                           {% if not editable %}disabled{% endif %}>
+                    No
+                  </label>
+
+                {% elif item.question_type == "TEXT" %}
+                  <br>
+                  <textarea name="q_{{ item.id }}"
+                            rows="3"
+                            cols="60"
+                            {% if not editable %}disabled{% endif %}>{{ item.value_text|default:"" }}</textarea>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        {% endfor %}
+
+        <h3>Comentario del evaluador</h3>
+        {% if editable %}
+          <textarea name="evaluator_comment" rows="6" style="width:100%;">{{ evaluation.evaluator_comment }}</textarea>
+        {% else %}
+          <div style="white-space:pre-line; border:1px solid #ddd; padding:8px;">
+            {{ evaluation.evaluator_comment|default:"" }}
+          </div>
+        {% endif %}
+
+        {% if editable %}
+          <button type="submit" onclick="document.getElementById('action-input').value='save'">Guardar</button>
+        {% endif %}
+
+        {% if evaluation.status == "DRAFT" and editable %}
+          <button type="submit" onclick="document.getElementById('action-input').value='submit'">Enviar</button>
+
+        {% elif evaluation.status == "SUBMITTED" %}
+          {% if not editable %}
+            <p><em>Evaluacion enviada. Edicion bloqueada.</em></p>
+          {% endif %}
+          {% if can_close %}
+            <button type="submit" onclick="document.getElementById('action-input').value='finalize'">Cerrar</button>
+          {% endif %}
+
+        {% else %}
+          <p><em>Evaluacion cerrada.</em></p>
+          {% if can_close %}
+            <hr>
+            <h3>Reapertura</h3>
+            <p>Reabrir desbloquea la edicion y deja trazabilidad del motivo.</p>
+            <label for="reopen_reason"><strong>Motivo de reapertura (obligatorio)</strong></label><br>
+            <textarea id="reopen_reason" name="reopen_reason" rows="3" style="width:100%;"></textarea><br><br>
+            <button type="submit" onclick="document.getElementById('action-input').value='reopen'; return confirm('Reabrir esta evaluacion? Quedara en estado DRAFT y sera editable.');">Reabrir evaluacion</button>
+          {% endif %}
+        {% endif %}
+
+      </form>
+    {% else %}
+      <p>No hay items en esta evaluacion.</p>
+    {% endif %}
+  {% else %}
+    <p><strong>No hay plantilla asociada a esta evaluaci??n.</strong></p>
+  {% endif %}
 </body>
 </html>

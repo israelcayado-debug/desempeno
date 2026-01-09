@@ -1,0 +1,182 @@
+{
+  "base_code": "P32",
+  "source_file": "P32_Ficha_Jefe_Taller_GP2.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Planificación de la producción",
+          "description": "Organización efectiva de cargas, secuencias y prioridades.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos",
+          "description": "Entrega de trabajos en las fechas establecidas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Control de recursos",
+          "description": "Optimización del personal, equipos y materiales.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguimiento de fabricación",
+          "description": "Supervisión activa del avance y resolución de incidencias.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión del rendimiento",
+          "description": "Asegura productividad y cumplimiento de los objetivos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Control de calidad",
+          "description": "Supervisión de soldaduras, ajustes, tolerancias y acabados.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento normativo",
+          "description": "Respeto a procedimientos, WPS, normas de cliente y estándares internos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de no conformidades",
+          "description": "Identificación, comunicación y apoyo en acciones correctivas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad PRL",
+          "description": "Aplicación de normas, uso de EPIs, orden y seguridad operacional.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Rigurosidad técnica",
+          "description": "Exige precisión en procesos y controles.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Liderazgo",
+          "description": "Capacidad para dirigir equipos y gestionar conflictos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Cumplimiento autónomo y riguroso de responsabilidades clave.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Implicación en hitos críticos y necesidades del proyecto.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y método",
+          "description": "Buena organización del taller y disciplina operativa.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Toma de decisiones",
+          "description": "Agilidad y criterio en situaciones operativas.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Procesos de fabricación",
+          "description": "Conocimiento de soldadura, mecanizado, ensayos y montaje.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Interpretación de planos",
+          "description": "Lectura correcta de tolerancias, acotaciones y requisitos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Normativa aplicable",
+          "description": "ASME, EN, ISO 3834, requisitos cliente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de inspecciones",
+          "description": "Coordinación con Calidad, ON/OCA y clientes.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Competencia digital",
+          "description": "Uso de ERP, órdenes de trabajo, partes, trazabilidad.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Coordinación interna",
+          "description": "Relación eficaz con producción, calidad, ingeniería y logística.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación con supervisores",
+          "description": "Transmisión clara de instrucciones y prioridades.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con operarios",
+          "description": "Trato profesional, respeto y apoyo técnico.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de conflictos",
+          "description": "Capacidad para resolver problemas en el equipo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud profesional",
+          "description": "Colaboración, disponibilidad y coherencia.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

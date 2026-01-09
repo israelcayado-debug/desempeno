@@ -1,0 +1,122 @@
+{
+  "base_code": "P27",
+  "source_file": "P27_Oficial_Tuberia_GP5.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 45,
+      "items": [
+        {
+          "subcriterion": "Fabricación y montaje de tubería",
+          "description": "Cumple con el avance previsto en prefabricación y montaje.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Interpretación de planos",
+          "description": "Trabaja correctamente a partir de planos e isométricos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Retrabajos",
+          "description": "Minimiza errores en cortes, ajustes y alineaciones.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Respeto de tolerancias",
+          "description": "Cumple las tolerancias de alineación, nivel y separación.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad en montaje",
+          "description": "Aplica normas de seguridad en trabajos en altura, corte y montaje.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cuidado de material",
+          "description": "Evita daños en tuberías, bridas y accesorios.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad en el montaje",
+          "description": "Es consciente del impacto de errores en tubería.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Disciplina de trabajo",
+          "description": "Respeta secuencias, instrucciones y prioridades.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud profesional",
+          "description": "Muestra seriedad y colaboración con otros oficios.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Lectura de planos e isométricos",
+          "description": "Interpreta simbología, piezas y rutas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Conocimiento de uniones",
+          "description": "Domina tipos de uniones, bridas, soportes y accesorios.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 5,
+      "items": [
+        {
+          "subcriterion": "Coordinación con soldadura y pruebas",
+          "description": "Se coordina con otros oficios para el cierre de líneas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación de desajustes",
+          "description": "Informa de interferencias o desviaciones detectadas.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

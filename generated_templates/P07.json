@@ -1,0 +1,182 @@
+{
+  "base_code": "P07",
+  "source_file": "P07_Ficha_Comercial_Senior_GP3.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Captación de negocio",
+          "description": "Generación de oportunidades y nuevos clientes.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de objetivos",
+          "description": "Alcance de ventas y márgenes definidos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de ofertas",
+          "description": "Preparación y seguimiento de propuestas comerciales.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cierre de contratos",
+          "description": "Negociación eficaz y cierre de ventas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Planificación comercial",
+          "description": "Gestión del pipeline y previsiones.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento contractual",
+          "description": "Alineación de ofertas con requisitos del cliente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Rigurosidad comercial",
+          "description": "Exactitud en precios, condiciones y alcances.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de riesgos comerciales",
+          "description": "Identificación de riesgos en contratos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Coordinación técnica",
+          "description": "Alineación con ingeniería y calidad en ofertas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Ética comercial",
+          "description": "Conducta profesional y transparente.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Autonomía",
+          "description": "Gestión independiente de cuentas y decisiones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Implicación con objetivos y resultados.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orientación al cliente",
+          "description": "Atención proactiva y seguimiento.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de la presión",
+          "description": "Desempeño eficaz bajo presión.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Confidencialidad",
+          "description": "Gestión responsable de información sensible.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Producto y procesos",
+          "description": "Conocimiento de productos y procesos industriales.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Mercado y competencia",
+          "description": "Análisis de mercado y posicionamiento.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Estructura de costes",
+          "description": "Comprensión de costes y márgenes.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Herramientas comerciales",
+          "description": "Uso de CRM, ERP y reporting.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Normativa básica",
+          "description": "Conocimiento general de requisitos técnicos y contractuales.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Relación con clientes",
+          "description": "Comunicación fluida y profesional.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Coordinación interna",
+          "description": "Trabajo conjunto con proyectos y técnica.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Negociación",
+          "description": "Capacidad de persuasión y acuerdo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación interna",
+          "description": "Transmisión clara de información relevante.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Representación de la empresa",
+          "description": "Imagen profesional ante terceros.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "base_code": "P35",
+  "source_file": "P35_Ficha_Document_Controller_GP6.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Gestión de revisiones",
+          "description": "Control preciso de versiones, revisiones y codificación documental.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos",
+          "description": "Entrega documental dentro de los plazos requeridos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguimiento MDR/ITP",
+          "description": "Actualización y control de matrices documentales y planes de inspección.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Preparación de dossiers",
+          "description": "Compilación estructurada de documentación para cliente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Organización del trabajo",
+          "description": "Eficiencia, planificación y priorización.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Control documental",
+          "description": "Aplicación correcta de formatos, codificación, firmas y registros.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento normativo",
+          "description": "Alineación con ISO 9001, ISO 3834, ASME, PED y requisitos cliente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Exactitud documental",
+          "description": "Documentos sin errores, completos y verificables.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Trazabilidad",
+          "description": "Control de documentos emitidos, recibidos y aprobados.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Rigurosidad",
+          "description": "Revisión detallada de contenido antes de emisión.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Cumplimiento riguroso de tareas sin supervisión constante.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Seriedad, constancia y fiabilidad en tareas críticas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y método",
+          "description": "Gestión ordenada del repositorio y estructura documental.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Iniciativa",
+          "description": "Identificación de mejoras en flujos documentales.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Confidencialidad",
+          "description": "Uso adecuado de información técnica y contractual.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Normativa aplicable",
+          "description": "ISO, EN, ASME, PED y requisitos documentales de cliente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "ITP / MDR",
+          "description": "Conocimiento de matrices documentales y planes de inspección.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Procesos productivos",
+          "description": "Comprensión general de fabricación y pruebas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Herramientas digitales",
+          "description": "ERP, trazabilidad, SharePoint, Excel avanzado.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Interpretación documental",
+          "description": "Capacidad para identificar requisitos críticos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Coordinación interna",
+          "description": "Relación eficaz con calidad, ingeniería, producción y compras.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Interacción con clientes",
+          "description": "Comunicación documental clara y profesional.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con inspectores",
+          "description": "Gestión correcta de documentos durante inspecciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Claridad en informes",
+          "description": "Redacción técnica precisa, ordenada y comprensible.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cooperación",
+          "description": "Actitud colaborativa y constructiva.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

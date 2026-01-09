@@ -1,0 +1,122 @@
+{
+  "base_code": "P28",
+  "source_file": "P28_Oficial_Pruebas_Hidraulicas_GP5.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 45,
+      "items": [
+        {
+          "subcriterion": "Preparación de pruebas",
+          "description": "Monta circuitos de prueba, tapones y conexiones correctamente.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Ejecución de pruebas",
+          "description": "Realiza las pruebas dentro de plazo y con el procedimiento establecido.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Documentación básica",
+          "description": "Completa registros y datos necesarios de la prueba.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Seguridad en pruebas",
+          "description": "Aplica protocolos de seguridad, zonas de exclusión y presurización controlada.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de presión y tiempos",
+          "description": "Respeta parámetros de presión, estabilización y purgas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Inspección visual",
+          "description": "Colabora en la detección de fugas y anomalías.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad en la prueba",
+          "description": "Es consciente del riesgo y actúa con prudencia.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Rigor en la ejecución",
+          "description": "Sigue el procedimiento de forma disciplinada.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud ante incidencias",
+          "description": "Reacciona de forma ordenada y comunicativa ante problemas.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Conocimiento de sistemas de prueba",
+          "description": "Conoce equipos de bombeo, manómetros y válvulas de prueba.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Interpretación de esquemas básicos",
+          "description": "Comprende circuitos simples de prueba e instrumentación asociada.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 5,
+      "items": [
+        {
+          "subcriterion": "Coordinación con calidad y producción",
+          "description": "Se coordina con inspección y taller para la ejecución de pruebas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación de resultados",
+          "description": "Informa claramente de la realización de la prueba y de cualquier incidencia.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

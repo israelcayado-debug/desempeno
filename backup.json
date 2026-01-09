@@ -1,0 +1,381 @@
+﻿[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-12-23T12:02:36.826Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "HR",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-12-23T12:02:48.303Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "EXEC",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-12-23T12:03:03.268Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "3",
+    "object_repr": "MANAGER",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-12-23T12:04:05.358Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-12-23T12:04:36.183Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "RESPONSABLE",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-12-23T12:04:47.362Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "RESPONSABLE",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-12-23T12:14:04.991Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "ADMINISTRACIËN",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-12-23T12:15:30.258Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "1 - Director General",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-12-23T12:15:58.327Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "P01 - Responsable Administraci¾n",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-12-23T12:16:15.547Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "P00 - Director General",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-12-23T12:16:58.836Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Empleado Prueba A (00000001A)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-12-23T12:17:31.708Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Empleado Prueba B (00000002B)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-12-23T12:19:38.221Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "RESPONSABLE",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-12-23T12:21:16.270Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "RESPONSABLE",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-12-23T12:23:28.209Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "3",
+    "object_repr": "MANAGER",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-12-23T14:44:42.037Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "2025 Anual",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "HR",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "EXEC",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 3,
+  "fields": {
+    "name": "MANAGER",
+    "permissions": [
+      38,
+      40
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$t4YA2NgaXGo0JRhb4oRrEE$uV3ZdnSJIhOAqgkBy53l6qgHoOHaQLM1H4NrMZiGqiI=",
+    "last_login": "2025-12-26T07:50:02.167Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "israel.cayado@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-12-23T11:58:53Z",
+    "groups": [
+      1,
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$u5Er31vvsehbDZwAMG5Syr$I7kbYil9okTfv0FG58p0HctUobs1uWeyR8pVxvKj6Xw=",
+    "last_login": "2025-12-23T15:05:09.982Z",
+    "is_superuser": false,
+    "username": "RESPONSABLE",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-12-23T12:04:35Z",
+    "groups": [
+      3
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "j06jdwmbwiv4xjidzzqs1z0uy9dynl78",
+  "fields": {
+    "session_data": ".eJxVjDEOgzAMAP_iuYoMIcVh7M4bkBM7hbZKJAJT1b9XSAztene6N0y8b_O0V12nRWCABi6_LHB8aj6EPDjfi4klb-sSzJGY01YzFtHX7Wz_BjPXGQZwGhV9T4Gk6wMSCYpD1zXBqmXvVFOLjrRNrsUUre0SM10pefTCbOHzBeRROAo:1vZ2aI:ahymD8l19f-JdG-2hKz6kOhGK82c57P8ry6YqHcD8OQ",
+    "expire_date": "2026-01-09T07:50:02.176Z"
+  }
+},
+{
+  "model": "org.department",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-12-23T12:14:04.990Z",
+    "updated_at": "2025-12-23T12:14:04.990Z",
+    "name": "ADMINISTRACIËN"
+  }
+},
+{
+  "model": "org.position",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-12-23T12:15:30.255Z",
+    "updated_at": "2025-12-23T12:16:15.543Z",
+    "code": "P00",
+    "name": "Director General",
+    "department": 1,
+    "professional_group": "GP1",
+    "is_active": true
+  }
+},
+{
+  "model": "org.position",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-12-23T12:15:58.325Z",
+    "updated_at": "2025-12-23T12:15:58.325Z",
+    "code": "P01",
+    "name": "Responsable Administraci¾n",
+    "department": 1,
+    "professional_group": "GP1",
+    "is_active": true
+  }
+},
+{
+  "model": "org.employee",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-12-23T12:16:58.835Z",
+    "updated_at": "2025-12-23T12:16:58.835Z",
+    "dni": "00000001A",
+    "full_name": "Empleado Prueba A",
+    "hire_date": null,
+    "termination_date": null,
+    "is_active": true,
+    "prl_position_label": "",
+    "evaluation_position": 1,
+    "manager": 1
+  }
+},
+{
+  "model": "org.employee",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-12-23T12:17:31.704Z",
+    "updated_at": "2025-12-23T12:17:31.704Z",
+    "dni": "00000002B",
+    "full_name": "Empleado Prueba B",
+    "hire_date": null,
+    "termination_date": null,
+    "is_active": true,
+    "prl_position_label": "",
+    "evaluation_position": 2,
+    "manager": 2
+  }
+},
+{
+  "model": "evaluations.evaluationperiod",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-12-23T14:44:42.034Z",
+    "updated_at": "2025-12-23T14:44:42.034Z",
+    "name": "2025 Anual",
+    "start_date": "2025-01-01",
+    "end_date": "2025-12-31",
+    "is_closed": false
+  }
+},
+{
+  "model": "evaluations.evaluation",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-12-23T15:26:11.843Z",
+    "updated_at": "2025-12-23T15:26:11.843Z",
+    "employee": 2,
+    "evaluator": 2,
+    "period": 1,
+    "template": null,
+    "status": "DRAFT",
+    "frozen_position_code": "P01",
+    "frozen_position_name": "Responsable Administraci¾n",
+    "final_score": null
+  }
+}
+]

@@ -1,0 +1,122 @@
+{
+  "base_code": "P20",
+  "source_file": "P20_Electricista_GP5.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 45,
+      "items": [
+        {
+          "subcriterion": "Ejecución de trabajos programados",
+          "description": "Realiza las órdenes de trabajo en los plazos establecidos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Resolución de averías",
+          "description": "Atiende averías con eficacia y dentro de un tiempo razonable.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Calidad de las intervenciones",
+          "description": "Los trabajos quedan correctamente terminados sin retrabajos innecesarios.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Seguridad eléctrica",
+          "description": "Cumple estrictamente normativa eléctrica y procedimientos de bloqueo/etiquetado.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Uso de EPIs",
+          "description": "Utiliza EPIs adecuados en todas las intervenciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden en el puesto y cableados",
+          "description": "Mantiene orden y limpieza en zonas de trabajo e instalaciones.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad en intervenciones",
+          "description": "Actúa con rigor y prudencia en trabajos eléctricos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso con el mantenimiento",
+          "description": "Muestra interés por el buen funcionamiento de las instalaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Trato profesional",
+          "description": "Mantiene una actitud adecuada con compañeros y usuarios.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Conocimiento de instalaciones",
+          "description": "Conoce esquemas, cuadros y circuitos de la planta.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actualización técnica",
+          "description": "Se mantiene al día en normativa y técnicas básicas cuando se le forma.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 5,
+      "items": [
+        {
+          "subcriterion": "Coordinación con Mantenimiento",
+          "description": "Trabaja coordinado con mecánicos y otros perfiles.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación de incidencias",
+          "description": "Informa claramente de averías, riesgos y actuaciones realizadas.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

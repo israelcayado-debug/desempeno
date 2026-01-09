@@ -1,0 +1,122 @@
+{
+  "base_code": "P25",
+  "source_file": "P25_Oficial_Grua_GP5.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 45,
+      "items": [
+        {
+          "subcriterion": "Ejecución de maniobras",
+          "description": "Realiza las maniobras de izado y traslado de cargas de forma eficaz.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Aprovechamiento de tiempos",
+          "description": "Organiza las maniobras evitando tiempos muertos innecesarios.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Disponibilidad del equipo",
+          "description": "Contribuye a mantener la grúa operativa dentro de su uso normal.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Seguridad en maniobras",
+          "description": "Cumple normas de seguridad, señalización y límites de carga.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Inspección previa",
+          "description": "Verifica el estado básico del equipo y elementos de izado antes de usar.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y entorno seguro",
+          "description": "Mantiene la zona de trabajo ordenada y libre de riesgos evitables.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad sobre la carga",
+          "description": "Es consciente del riesgo y actúa con máxima prudencia.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Disciplina en instrucciones",
+          "description": "Respeta indicaciones del jefe de maniobra o responsable.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud profesional",
+          "description": "Muestra calma, concentración y seriedad en maniobras.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Conocimiento del equipo",
+          "description": "Domina mandos, radios de giro y capacidades de la grúa.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Uso de útiles de izado",
+          "description": "Selecciona y usa eslingas, cáncamos y accesorios correctamente.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 5,
+      "items": [
+        {
+          "subcriterion": "Comunicación con señalistas",
+          "description": "Mantiene una comunicación clara por señales o radio.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Coordinación con taller",
+          "description": "Se integra en la planificación de movimientos con el resto del equipo.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

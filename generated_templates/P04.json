@@ -1,0 +1,182 @@
+{
+  "base_code": "P04",
+  "source_file": "P04_Ficha_Responsable_Compras_Logistica_GP2.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Planificación de compras",
+          "description": "Programación eficiente de compras y aprovisionamientos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos",
+          "description": "Recepción de materiales en fechas requeridas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Control de costes",
+          "description": "Optimización de precios, transportes y condiciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de proveedores",
+          "description": "Seguimiento de desempeño y fiabilidad de proveedores.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión logística",
+          "description": "Eficiencia en flujos internos y externos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento contractual",
+          "description": "Respeto a condiciones pactadas y especificaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Control documental",
+          "description": "Gestión correcta de pedidos, contratos y albaranes.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de incidencias",
+          "description": "Resolución de retrasos, errores o daños.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Trazabilidad",
+          "description": "Seguimiento de materiales y documentación asociada.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad logística",
+          "description": "Cumplimiento de normas PRL en logística y transporte.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Asunción de decisiones en compras y logística.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Implicación con objetivos de proyecto y producción.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Autonomía",
+          "description": "Gestión independiente del área.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de la presión",
+          "description": "Respuesta eficaz ante urgencias y cambios.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Ética profesional",
+          "description": "Conducta transparente y responsable.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Mercado y proveedores",
+          "description": "Conocimiento de suministradores y mercado.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Logística y transporte",
+          "description": "Gestión de transportes, incoterms y aduanas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Estructura de costes",
+          "description": "Análisis de costes y optimización.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Herramientas de gestión",
+          "description": "Uso de ERP, compras y seguimiento.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Normativa aplicable",
+          "description": "Conocimiento de requisitos contractuales y técnicos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Coordinación interna",
+          "description": "Colaboración con producción, proyectos y almacén.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación con proveedores",
+          "description": "Relación clara y profesional.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Negociación",
+          "description": "Capacidad para acordar condiciones favorables.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación interna",
+          "description": "Información fluida sobre estado de compras.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Representación de la empresa",
+          "description": "Imagen profesional ante terceros.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

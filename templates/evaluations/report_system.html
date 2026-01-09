@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Reporte del sistema</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <p><a href="/reports/period/">&larr; Volver a reportes</a></p>
+  <h1>Reporte del sistema</h1>
+  <p><strong>Fecha:</strong> {{ now }}</p>
+
+  <h2>Estado global</h2>
+  <p>Plantillas activas: {{ active_count }}</p>
+  <p>Posiciones totales: {{ position_count }}</p>
+  <p>Asignaciones correctas: {{ correct_assignments }}</p>
+
+  <h2>Versionado</h2>
+  {% if outdated %}
+    <ul>
+      {% for bc, v_act, v_last in outdated %}
+        <li>{{ bc }}: activa v{{ v_act }}, ultima v{{ v_last }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Todas las activas estan en ultima version.</p>
+  {% endif %}
+
+  <h2>Estructura de preguntas</h2>
+  <p>Tipos detectados: {{ q_types|join:", " }}</p>
+  <p>Recuentos por plantilla: min={{ count_min }}, max={{ count_max }}, valores={{ count_values }}</p>
+
+  <h2>Asignaciones</h2>
+  <p>Posiciones sin asignacion: {{ missing_assignment|length }}</p>
+  {% if missing_assignment %}
+    <ul>
+      {% for code in missing_assignment %}
+        <li>{{ code }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <p>Asignadas pero no activas: {{ assigned_not_active|length }}</p>
+  {% if assigned_not_active %}
+    <ul>
+      {% for code, bc in assigned_not_active %}
+        <li>{{ code }} -> {{ bc }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <p>Base_code sin Position: {{ legacy_base_codes|length }}</p>
+  {% if legacy_base_codes %}
+    <ul>
+      {% for bc in legacy_base_codes %}
+        <li>{{ bc }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <p><strong>Estado:</strong> {% if issues %}ATENCION{% else %}OK{% endif %}</p>
+
+  <p><a href="/reports/system/?csv=1">Export CSV</a></p>
+</body>
+</html>

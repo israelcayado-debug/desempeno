@@ -1,0 +1,162 @@
+{
+  "base_code": "P11",
+  "source_file": "P11_Personal Técnico Superior Contable y RRHH_GP3.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 40,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento de plazos fiscales",
+          "description": "Facturas, asientos e información contable registrados dentro de los plazos establecidos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos laborales y de Convenio",
+          "description": "Nóminas e información para SS elaborada dentro de los plazos legales establecidos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Exactitud documental",
+          "description": "Registros sin errores, uso correcto de formatos",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión del portal del empleado",
+          "description": "Gestiona la documentación e información enviada a traves del portal",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Organización del trabajo",
+          "description": "Priorización, eficiencia, autonomía",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Cumplimiento normativo",
+          "description": "LOPD, Plan Igualdad, Plan LGTBI, Convenio Metal, Legislación Fiscal y Laboral",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Control documental",
+          "description": "Revisión de toda la documentación laboral y de gestion de personal generada se adapta a los protocolos marcados por la Organización (lenguaje inclusivo, etc.)",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Ejecución rigurosa sin supervisión constante",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Seriedad en tareas críticas",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y método",
+          "description": "Control documental y digital",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Iniciativa",
+          "description": "Propuesta de mejoras, detección temprana de riesgos",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Confidencialidad",
+          "description": "Discrección total con información sensible como salarios, datos personales, situación contractual, etc…",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Fiscalidad y normativa laboral",
+          "description": "Requisitos, normativa, plazos",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Procesos contables",
+          "description": "Albaranes, Facturas, asientos contables, libro Mayor, Gestión de Pagos",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Protocolos internos",
+          "description": "Plan de Igualdad Plan LGTBI Protocolo Acoso Guia lenguaje inclusivo Protocolo Promoción Interna Evaluación del Desempeño",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Competencia digital",
+          "description": "ERP, Excel Avanzado, Portal del Empleado, PowerPoint, Canva,",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Coordinación con Dirección y mandos intermedios",
+          "description": "Interacción eficaz con Dirección y mandos intermedios",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con proveedores",
+          "description": "Interacción fluida con proveedores y suministradores",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión del personal",
+          "description": "Informa, canaliza y comunica de forma eficiente las decisiones organizativas que afecten al personal.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cooperación interna",
+          "description": "Apoya a los mandos intermendios en la gestion del personal a su cargo",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud profesional",
+          "description": "Respeto, colaboración, empatía",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

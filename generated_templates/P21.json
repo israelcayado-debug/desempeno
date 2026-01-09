@@ -1,0 +1,182 @@
+{
+  "base_code": "P21",
+  "source_file": "P21_Ficha_Personal_Mecanico_GP5.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 35,
+      "items": [
+        {
+          "subcriterion": "Montajes mecánicos",
+          "description": "Correcta ejecución de montajes y ajustes.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de plazos",
+          "description": "Entrega de tareas en los tiempos establecidos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Preparación de herramientas",
+          "description": "Disponibilidad y uso adecuado de útiles y equipos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Apoyo al taller",
+          "description": "Colaboración con soldadores, maquinistas y movimientos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Organización del trabajo",
+          "description": "Orden, planificación y aprovechamiento del tiempo.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Control de calidad básico",
+          "description": "Verificación de ajustes y medidas simples.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento normativo",
+          "description": "Respeto a instrucciones, planos y procedimientos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad PRL",
+          "description": "Uso correcto de EPIs y orden en el puesto.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Mantenimiento básico",
+          "description": "Cuidado de herramientas y equipos asignados.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Gestión de incidencias",
+          "description": "Comunicación de fallos, desviaciones o riesgos detectados.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 20,
+      "items": [
+        {
+          "subcriterion": "Responsabilidad",
+          "description": "Realiza su trabajo con rigor y fiabilidad.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso",
+          "description": "Disposición y constancia ante necesidades del taller.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Orden y limpieza",
+          "description": "Mantiene su zona de trabajo en condiciones adecuadas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Iniciativa",
+          "description": "Aporta soluciones y se anticipa a necesidades.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Disciplina operativa",
+          "description": "Cumple las instrucciones y flujos establecidos.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Herramientas mecánicas",
+          "description": "Uso adecuado de llaves, prensas, alineadores y equipos básicos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Interpretación de planos",
+          "description": "Lectura de dimensiones y elementos simples.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Materiales",
+          "description": "Conocimiento básico de elementos mecánicos y piezas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Ajustes y tolerancias simples",
+          "description": "Comprensión de montajes y ajustes básicos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Competencia digital",
+          "description": "Uso de ERP, partes y comunicación interna.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Coordinación interna",
+          "description": "Trabaja de forma fluida con el resto del taller.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Comunicación",
+          "description": "Transmite correctamente incidencias y necesidades.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con compañeros",
+          "description": "Respeto, profesionalidad y apoyo.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Disponibilidad",
+          "description": "Flexibilidad para apoyar diversas tareas.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud profesional",
+          "description": "Comportamiento adecuado y compromiso.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}

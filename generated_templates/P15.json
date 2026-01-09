@@ -1,0 +1,122 @@
+{
+  "base_code": "P15",
+  "source_file": "P15_Tecnico_Compras_GP4.docx",
+  "blocks": [
+    {
+      "code": "A",
+      "title": "Productividad y Resultados",
+      "weight_percent": 40,
+      "items": [
+        {
+          "subcriterion": "Gestión de pedidos",
+          "description": "Tramita pedidos y realiza el seguimiento de envíos y plazos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguimiento de proveedores",
+          "description": "Verifica estado de órdenes y comunica retrasos.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Logística interna/externa",
+          "description": "Coordina transportes, cargas y documentación asociada.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Calidad y Seguridad",
+      "weight_percent": 25,
+      "items": [
+        {
+          "subcriterion": "Documentación correcta",
+          "description": "Mantiene documentación de compras y logística ordenada y precisa.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Cumplimiento de procesos",
+          "description": "Sigue el procedimiento de compras, validaciones y aprobaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Seguridad documental",
+          "description": "Protege información sensible de proveedores y precios.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Actitud y Responsabilidad",
+      "weight_percent": 15,
+      "items": [
+        {
+          "subcriterion": "Actitud negociadora básica",
+          "description": "Muestra iniciativa para resolver incidencias con proveedores.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Compromiso con plazos",
+          "description": "Cumple tiempos internos y de comunicación.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Actitud colaborativa",
+          "description": "Coopera con Producción, Almacén y Calidad.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Conocimiento Técnico",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Conocimiento de materiales",
+          "description": "Identifica materiales, referencias y especificaciones.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Uso de ERP",
+          "description": "Registra pedidos, entradas y movimientos con precisión.",
+          "scale": "1-5"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "title": "Trabajo en Equipo / Comunicación",
+      "weight_percent": 10,
+      "items": [
+        {
+          "subcriterion": "Comunicación con departamentos",
+          "description": "Coordina eficazmente con logística, almacén y producción.",
+          "scale": "1-5"
+        },
+        {
+          "subcriterion": "Relación con proveedores",
+          "description": "Mantiene comunicación profesional y clara.",
+          "scale": "1-5"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "expected_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "observed_blocks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  }
+}
